@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo/lw-logo.png";
 import lock from "../assets/logo/lock-Icon.png";
 import GradientBtn from "../utils/GradientBtn";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -63,7 +64,7 @@ const Header = () => {
         <div class="navbar-start hidden lg:flex items-center">
           <ul class="menu menu-horizontal p-0 text-lg">
             <li>
-              <a className="">Home</a>
+              <NavLink to="/" className="">Home</NavLink>
             </li>
             <li>
               <a>Courses</a>
