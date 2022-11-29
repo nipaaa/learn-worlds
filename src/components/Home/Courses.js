@@ -78,7 +78,7 @@ const Courses = () => {
   return (
     <div className="container">
       <Title>
-        <span className="title_border w-1/2">Our Courses</span>{" "}
+        <span className="title_border">Our Courses</span>{" "}
       </Title>
       <Carousel responsive={responsive}
        infinite={true}

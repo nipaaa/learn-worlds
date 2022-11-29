@@ -15,3 +15,16 @@
   border-radius: 6px !important;
   width: 50% !important;
 }
+.about_border{
+  border-bottom: 6px solid transparent;
+  border-image: linear-gradient(to left, #FFFFFF,  #FF1949);
+  border-image-slice: 1;
+  border-radius: 6px !important;
+  width: 50% !important;
+}
+.about_bg{
+ background-image: url('./assets/bg/about-us-bg.png'),url('./assets/bg/circel-bg2.png');
+ background-position: right bottom, left bottom;
+ background-repeat: no-repeat, no-repeat;
+ background-size: auto;
+}
