@@ -47,13 +47,13 @@ const Banner = () => {
             }
             </div>
            
-            <div className="flex gap-8">
+            <div className="flex flex-wrap gap-8">
                 <GradientBtn>Book Now</GradientBtn>
                 <BlueBtn>Learn More</BlueBtn>
             </div>
           </div>
           <div>
-            <img className="-ml-36" src={hero} alt=""/>
+            <img className="lg:-ml-36" src={hero} alt=""/>
           </div>
         </div>
       </div>

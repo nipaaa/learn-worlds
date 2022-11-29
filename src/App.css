@@ -1,3 +1,11 @@
 .banner_bg{
   background-image: linear-gradient(206.75deg, #ECF8FF 4.95%, #FBEEFF 50.21%, #FFFFFF 69.89%);;
 }
+
+.trusted_company_bg{
+  background-image: url('./assets/bg/circel-bg1.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  position: absolute;
+}
