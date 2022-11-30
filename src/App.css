@@ -9,14 +9,14 @@
   background-size: contain;
 }
 .title_border{
-  border-bottom: 6px solid transparent;
+  border-bottom: 5px solid transparent;
   border-image: linear-gradient(to right, #FFFFFF,  #FF1949);
   border-image-slice: 1;
   border-radius: 6px !important;
   width: 50% !important;
 }
 .about_border{
-  border-bottom: 6px solid transparent;
+  border-bottom: 5px solid transparent;
   border-image: linear-gradient(to left, #FFFFFF,  #FF1949);
   border-image-slice: 1;
   border-radius: 6px !important;
