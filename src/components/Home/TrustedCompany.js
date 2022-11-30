@@ -33,7 +33,7 @@ const TrustedCompany = () => {
         <p className="text-center text-[#31374D] font-[600] mb-[60px]">
           Trusted by 5000+ companies worldwide
         </p>
-        <div className="flex flex-wrap gap-8 justify-between">
+        <div className="flex flex-wrap gap-8 justify-center lg:justify-between ">
           {trustedCompany.map((company, index) => (
             <div key={index}>
               <img src={company.picture} alt="" />
