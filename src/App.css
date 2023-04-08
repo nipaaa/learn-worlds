@@ -23,6 +23,14 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   padding-top: 119px;
+  position: relative;
+}
+
+.banner .heroine {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+ 
 }
 
 .banner h1 {
@@ -87,7 +95,10 @@
   background-position: right top 10%;
   background-size: contain;
   padding-top: 120px;
+  margin-bottom: 120px;
 }
+
+
 
 .trusted_company h2 {
   font-family: 'Montserrat', sans-serif;

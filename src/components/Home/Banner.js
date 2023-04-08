@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../../assets/home/hero.png";
+import banner from "../../assets/home/banner.png";
 import BlueBtn from "../../utils/BlueBtn";
 import GradientBtn from "../../utils/GradientBtn";
 import student from "../../assets/logo/students.png";
@@ -56,7 +56,7 @@ const Banner = () => {
               <BlueBtn>Learn More</BlueBtn>
             </div>
           </div>
-          <div>{/* <img className="lg:-ml-36" src={hero} alt="" /> */}</div>
+          <div className="heroine"><img className="lg:-ml-36" src={banner} alt="" /></div>
         </div>
       </div>
     </div>

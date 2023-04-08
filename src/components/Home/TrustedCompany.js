@@ -5,6 +5,7 @@ import google from "../../assets/logo/google.png";
 import amd from "../../assets/logo/amd.png";
 import design from "../../assets/logo/99design.png";
 import chaseo from "../../assets/logo/amazon.png";
+import circleBg from "../../assets/bg/circel-bg1.png";
 
 const TrustedCompany = () => {
   const trustedCompany = [
@@ -29,10 +30,8 @@ const TrustedCompany = () => {
   ];
   return (
     <div className="trusted_company">
-      <div className="container">
-        <h2>
-          Trusted by 5000+ companies worldwide
-        </h2>
+      <div className="container ">
+        <h2>Trusted by 5000+ companies worldwide</h2>
         <div className="flex flex-wrap   justify-center lg:justify-between ">
           {trustedCompany.map((company, index) => (
             <div key={index}>
