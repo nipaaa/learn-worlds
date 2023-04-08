@@ -30,7 +30,7 @@ const TrustedCompany = () => {
   ];
   return (
     <div className="trusted_company">
-      <img className="circle_bg" src={circleBg} alt="" />
+      <img className="hidden lg:block circle_bg" src={circleBg} alt="" />
       <div className="container ">
         <h2>Trusted by 5000+ companies worldwide</h2>
         <div className="flex flex-wrap   justify-center lg:justify-between ">

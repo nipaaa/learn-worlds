@@ -17,7 +17,7 @@ const Courses = () => {
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#BEB1E9] p-5 rounded-t-2xl",
+      className: "bg-[#BEB1E9] py-[20px]  rounded-t-2xl",
     },
     {
       pic: graphic,
@@ -26,7 +26,7 @@ const Courses = () => {
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#B1E3DC] p-5 rounded-t-2xl",
+      className: "bg-[#B1E3DC] py-[20px]  rounded-t-2xl",
     },
     {
       pic: digital,
@@ -35,7 +35,7 @@ const Courses = () => {
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#B1D6E9] p-5 rounded-t-2xl",
+      className: "bg-[#B1D6E9] py-[20px] rounded-t-2xl",
     },
     {
       pic: uiUx,
@@ -44,7 +44,7 @@ const Courses = () => {
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#B7C8FF] p-5 rounded-t-2xl",
+      className: "bg-[#B7C8FF] py-[20px]  rounded-t-2xl",
     },
     {
       pic: uiUx,
@@ -53,7 +53,7 @@ const Courses = () => {
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#B7C8FF] p-5 rounded-t-2xl",
+      className: "bg-[#B7C8FF] py-[20px]  rounded-t-2xl",
     },
   ];
   const responsive = {

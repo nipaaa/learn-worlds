@@ -5,7 +5,7 @@ import Halfstar from "../../assets/logo/half-star.png";
 
 const CourseCard = ({course}) => {
     return (
-        <div className='m-3 shadow rounded-2xl'>
+        <div className='m-[15px] carousel_card'>
         <div className={course.className}>
           <img className="mx-auto" src={course.pic} alt="" />
         </div>

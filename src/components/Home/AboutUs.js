@@ -23,7 +23,7 @@ const AboutUs = () => {
         <div>
           <img src={about} alt="" />
         </div>
-        <div className="flex flex-col gap-y-4 my-auto">
+        <div className="">
           <Title>
             <span className="text-start about_border">About Us</span>{" "}
           </Title>
