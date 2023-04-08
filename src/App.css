@@ -26,13 +26,6 @@
   position: relative;
 }
 
-.banner .heroine {
-  position: absolute;
-  bottom: 0;
-  right: 12%;
- 
-}
-
 .banner h1 {
   font-weight: 700;
   font-size: 74px;
@@ -42,7 +35,7 @@
   margin-bottom: 31px;
 }
 
-.banner p {
+.banner .content {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -63,6 +56,37 @@
   font-size: 16px;
   line-height: 24px;
   color: rgba(68, 68, 68, 0.85);
+}
+
+.banner .heroine {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  right: 12%;
+
+}
+
+.banner .expert {
+  border: 1px solid #8D2CE2;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
+
+}
+
+.banner .collection {
+  border: 1px solid #8D2CE2;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  position: absolute;
+  right: 17%;
+  top: 33%;
+
 }
 
 .gradient_btn {

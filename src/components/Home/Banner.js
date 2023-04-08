@@ -5,7 +5,8 @@ import GradientBtn from "../../utils/GradientBtn";
 import student from "../../assets/logo/students.png";
 import teacher from "../../assets/logo/teacher.png";
 import course from "../../assets/logo/course.png";
-import Content from "../../utils/Content";
+import expert from "../../assets/home/expert.png";
+import collection from "../../assets/home/collection.png";
 
 const Banner = () => {
   const database = [
@@ -33,7 +34,7 @@ const Banner = () => {
             <h1>
               Experience <br /> limitless learning
             </h1>
-            <p>
+            <p className="content">
               An LMS gives you the ability to track the progress of learnersin
               the <br />
               course material. More precisely, you can track their
@@ -44,9 +45,7 @@ const Banner = () => {
                 <div key={index}>
                   <img className="mb-[15px]" src={data.picture} alt="" />
                   <p className="amount ">{data.amount} + </p>
-                  <p className="title">
-                    {data.title}
-                  </p>
+                  <p className="title">{data.title}</p>
                 </div>
               ))}
             </div>
@@ -56,7 +55,20 @@ const Banner = () => {
               <BlueBtn>Learn More</BlueBtn>
             </div>
           </div>
-          <div className="heroine"><img className="lg:-ml-36" src={banner} alt="" /></div>
+          <div className="heroine">
+            <img className="lg:-ml-36" src={banner} alt="" />
+          </div>
+          <div className="expert flex items-center gap-[20px]">
+            <img src={expert} alt="" />
+            <p>Expert Instructors</p>
+          </div>
+          <div className="collection flex items-center gap-[20px]">
+            <img src={collection} alt="" />
+            <p>
+              Largest Collection <br />
+              For Every Course
+            </p>
+          </div>
         </div>
       </div>
     </div>
