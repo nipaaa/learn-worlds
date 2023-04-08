@@ -26,27 +26,25 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="banner_bg py-24">
+    <div className="banner">
       <div className="container ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-          <div className="flex flex-col gap-y-6">
-            <h1 className="text-[#31374D] text-[74px] font-bold">
+        <div>
+          <div>
+            <h1>
               Experience <br /> limitless learning
             </h1>
-            <Content>
+            <p>
               An LMS gives you the ability to track the progress of learnersin
               the <br />
               course material. More precisely, you can track their
               understanding.
-            </Content>
-            <div className="flex gap-12  items-center mb-8">
+            </p>
+            <div className="flex gap-12  items-center mb-[30px]">
               {database.map((data, index) => (
-                <div className="flex flex-col gap-y-3" key={index}>
-                  <img src={data.picture} alt="" />
-                  <p className="text-[20px] text-[#31374D] font-bold">
-                    {data.amount} +{" "}
-                  </p>
-                  <p className="text-[16px] text-[rgba(68, 68, 68, 0.85)]">
+                <div key={index}>
+                  <img className="mb-[15px]" src={data.picture} alt="" />
+                  <p className="amount ">{data.amount} + </p>
+                  <p className="title">
                     {data.title}
                   </p>
                 </div>
@@ -58,9 +56,7 @@ const Banner = () => {
               <BlueBtn>Learn More</BlueBtn>
             </div>
           </div>
-          <div>
-            <img className="lg:-ml-36" src={hero} alt="" />
-          </div>
+          <div>{/* <img className="lg:-ml-36" src={hero} alt="" /> */}</div>
         </div>
       </div>
     </div>

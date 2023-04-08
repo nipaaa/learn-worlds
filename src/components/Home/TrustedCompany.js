@@ -28,12 +28,12 @@ const TrustedCompany = () => {
     },
   ];
   return (
-    <div className="trusted_company_bg">
-      <div className="container py-[120px]">
-        <p className="text-center text-[#31374D] font-[600] mb-[60px]">
+    <div className="trusted_company">
+      <div className="container">
+        <h2>
           Trusted by 5000+ companies worldwide
-        </p>
-        <div className="flex flex-wrap gap-8 justify-center lg:justify-between ">
+        </h2>
+        <div className="flex flex-wrap   justify-center lg:justify-between ">
           {trustedCompany.map((company, index) => (
             <div key={index}>
               <img src={company.picture} alt="" />

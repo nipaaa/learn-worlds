@@ -1,30 +1,124 @@
-.banner_bg{
-  background-image: linear-gradient(206.75deg, #ECF8FF 4.95%, #FBEEFF 50.21%, #FFFFFF 69.89%);;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.container {
+  max-width: 1167px;
 }
 
-.trusted_company_bg{
+.navbar-start {
+  width: unset;
+}
+
+.menu li a {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.banner {
+  background-image: url("../src/assets/bg/banner_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  padding-top: 119px;
+}
+
+.banner h1 {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 94px;
+  text-transform: capitalize;
+  color: #31374D;
+  margin-bottom: 31px;
+}
+
+.banner p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444444;
+  margin-bottom: 29px;
+}
+
+.banner .amount {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #31374D;
+  margin-bottom: 5px;
+}
+
+.banner .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(68, 68, 68, 0.85);
+}
+
+.gradient_btn {
+  background: linear-gradient(88.98deg, #FF047D 2.19%, #FF8804 99.89%);
+  border-radius: 15px;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.blue_btn {
+  background: #0A0762;
+  border-radius: 15px;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.trusted_company {
   background-image: url('./assets/bg/circel-bg1.png');
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right top 10%;
   background-size: contain;
+  padding-top: 120px;
 }
-.title_border{
+
+.trusted_company h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #31374D;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title_border {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(to right, #FFFFFF,  #FF1949);
+  border-image: linear-gradient(to right, #FFFFFF, #FF1949);
   border-image-slice: 1;
   border-radius: 6px !important;
   width: 50% !important;
 }
-.about_border{
+
+.about_border {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(to left, #FFFFFF,  #FF1949);
+  border-image: linear-gradient(to left, #FFFFFF, #FF1949);
   border-image-slice: 1;
   border-radius: 6px !important;
   width: 50% !important;
 }
-.about_bg{
- background-image: url('./assets/bg/about-us-bg.png'),url('./assets/bg/circel-bg2.png');
- background-position: right bottom, left bottom;
- background-repeat: no-repeat, no-repeat;
- background-size: auto;
+
+.about_bg {
+  background-image: url('./assets/bg/about-us-bg.png'), url('./assets/bg/circel-bg2.png');
+  background-position: right bottom, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto;
 }
