@@ -3,7 +3,7 @@
 
 
 .container {
-  max-width: 1167px;
+  max-width: 1170px;
 }
 
 .navbar-start {
@@ -16,7 +16,7 @@
 }
 
 .banner {
-  background-image: url("../src/assets/bg/banner_bg.png");
+  background: linear-gradient(206.75deg, #ECF8FF 4.95%, #FBEEFF 50.21%, #FFFFFF 69.89%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,7 +60,7 @@
 
 .banner .heroine {
   position: absolute;
-  top: 20%;
+  top: 15%;
   bottom: 0;
   right: 12%;
 
@@ -74,8 +74,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 15%;
-
+  bottom: 20%;
 }
 
 .banner .collection {
@@ -85,8 +84,7 @@
   border-radius: 10px;
   position: absolute;
   right: 17%;
-  top: 33%;
-
+  top: 30%;
 }
 
 .gradient_btn {
@@ -114,12 +112,23 @@
 }
 
 .trusted_company {
-  background-image: url('./assets/bg/circel-bg1.png');
+  /* background-image: url('./assets/bg/circel-bg1.png');
   background-repeat: no-repeat;
   background-position: right top 10%;
-  background-size: contain;
+  background-size: contain; */
+  position: relative;
   padding-top: 120px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.trusted_company .circle_bg {
+  position: absolute;
+  top: -246px;
+  right: 0;
+  transform: rotate(337deg);
+  z-index: -1;
+
 }
 
 
