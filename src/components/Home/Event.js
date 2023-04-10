@@ -11,13 +11,13 @@ const Event = () => {
   return (
     <div className="container">
       <Title>
-        <span className="title_border">Join Event</span>
+        <span>Join Event</span>
       </Title>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 my-12">
-        <div className="rounded-lg">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+        <div className="rounded-[5px]">
           <img className="w-full" src={mobile} alt="" />
 
-          <div className="bg-[#EEEEEE] p-4 flex flex-col gap-y-8">
+          <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">
             <div className="flex justify-between">
               <div className="flex items-center gap-3">
                 <img className="me-1" src={location} alt="" />
@@ -25,25 +25,68 @@ const Event = () => {
               </div>
               <div className="flex items-center gap-3">
                 <img src={clock} alt="" />
-                <p className="text-[#5F6765] text-[14px]">12.00 PM-03.00 AM</p>
+                <p className="text-[#5F6765] text-[14px] font-[400]">
+                  12.00 PM-03.00 AM
+                </p>
               </div>
             </div>
-            <p className="text-[#31374C] text-[16px] font-[600]">Web Development and Mobile app Development</p>
+            <p className="text-[#31374C] text-[16px] font-[600]">
+              Web Development and Mobile app Development
+            </p>
             <hr />
             <div className="flex justify-between">
               <div className="flex items-center gap-3">
                 <img className="me-1" src={calender} alt="" />
-                <p className="text-[#5F6765] text-[14px]"> 20 June 2022</p>
+                <p className="text-[#5F6765] text-[14px] font-[400]">
+                  {" "}
+                  20 June 2022
+                </p>
               </div>
               <div className="flex items-center gap-3">
-                <GradientBtn>Join Event</GradientBtn>
+                {/* <GradientBtn>Join Event</GradientBtn> */}
+                <button className="bg-gradient-to-r from-[#FF047D] to-[#FF8804] rounded-[10px] px-[15px] py-[10px] text-white text-[14px] font-[500]">
+                  Join Event
+                </button>
               </div>
             </div>
           </div>
+        </div>
+        <div className="rounded-[5px]">
+          <img className="w-full" src={blueprint} alt="" />
 
-
-
-          
+          <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">
+            <div className="flex justify-between">
+              <div className="flex items-center gap-3">
+                <img className="me-1" src={location} alt="" />
+                <p className="text-[#5F6765] text-[14px]"> Dhaka</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <img src={clock} alt="" />
+                <p className="text-[#5F6765] text-[14px] font-[400]">
+                  12.00 PM-03.00 AM
+                </p>
+              </div>
+            </div>
+            <p className="text-[#31374C] text-[16px] font-[600]">
+            A Career in UI UX Skills, Tools, and a Blueprint to Pivot Into the Field
+            </p>
+            <hr />
+            <div className="flex justify-between">
+              <div className="flex items-center gap-3">
+                <img className="me-1" src={calender} alt="" />
+                <p className="text-[#5F6765] text-[14px] font-[400]">
+                  {" "}
+                  20 June 2022
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                {/* <GradientBtn>Join Event</GradientBtn> */}
+                <button className="bg-gradient-to-r from-[#FF047D] to-[#FF8804] rounded-[10px] px-[15px] py-[10px] text-white text-[14px] font-[500]">
+                  Join Event
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

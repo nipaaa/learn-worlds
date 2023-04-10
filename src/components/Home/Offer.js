@@ -32,7 +32,7 @@ const Offer = () => {
     },
   ];
   return (
-    <div className="bg-[#EBF3FF] py-24 mb-48">
+    <div className="bg-[#EBF3FF] py-[60px] mb-[120px]">
       <div className="container">
         <Title>
           <span>What We Offer</span>{" "}
