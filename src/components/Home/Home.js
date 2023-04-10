@@ -5,6 +5,7 @@ import Courses from './Courses';
 import Event from './Event';
 import Offer from './Offer';
 import TrustedCompany from './TrustedCompany';
+import Instructor from './Instructor';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <AboutUs/>
             <Offer/>
             <Event/>
+            <Instructor/>
         </div>
     );
 };

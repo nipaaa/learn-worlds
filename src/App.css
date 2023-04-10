@@ -264,3 +264,9 @@
   font-weight: 700;
   transition: 0.3s ease-in-out;
 }
+
+.instructor {
+  box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
+  -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
+  -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
+}
