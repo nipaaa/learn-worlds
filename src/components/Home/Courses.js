@@ -47,13 +47,13 @@ const Courses = () => {
       className: "bg-[#B7C8FF] py-[20px]  rounded-t-2xl",
     },
     {
-      pic: uiUx,
+      pic: digital,
       name: "Jhon Smith",
-      title: "UI/UX Design",
+      title: "Digital Marketing",
       description:
         "Donec facilisi quis aliquam cursus posuere in interdum consectetur ",
       price: 2000,
-      className: "bg-[#B7C8FF] py-[20px]  rounded-t-2xl",
+      className: "bg-[#B1D6E9] py-[20px] rounded-t-2xl",
     },
   ];
   const responsive = {
@@ -80,9 +80,7 @@ const Courses = () => {
       <Title>
         <span className="title_border">Our Courses</span>{" "}
       </Title>
-      <Carousel responsive={responsive}
-       infinite={true}
-       swipeable={true}>
+      <Carousel responsive={responsive} infinite={true} swipeable={true}>
         {courses.map((course, index) => (
           <CourseCard key={index} course={course}></CourseCard>
         ))}
