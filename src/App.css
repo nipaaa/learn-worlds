@@ -222,3 +222,46 @@
   color: #444444;
   margin-bottom: 15px;
 }
+
+
+.event {
+  margin-bottom: 120px;
+}
+
+.event .date {
+  background: rgba(110, 23, 225, 0.2);
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(36, 34, 34, 0.9);
+}
+
+.event .title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #31374C;
+  margin-bottom: 5px;
+}
+
+.event .content {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2E3331;
+}
+
+.event .date:hover {
+  background: #6E17E1;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
