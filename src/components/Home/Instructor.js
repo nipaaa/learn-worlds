@@ -11,7 +11,32 @@ const Instructor = () => {
   return (
     <div className="instructor">
       <div className="container pb-12">
-        <div className="instructor_card">
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+<div className="instructor_card">
+          <img className="instructor_img" src={instructor1} alt="" />
+          <div className="ml-16 text-white">
+            <p className="text-[24px] font-[700]">Robert</p>
+            <p className="text-[16px] font-[400]">UI/UX Expert</p>
+          </div>
+          <div className="instructor_icon">
+            <img src={fb} alt="" />
+            <img src={ig} alt="" />
+            <img src={tw} alt="" />
+            <img src={md} alt="" />
+          </div>
+        </div> <div className="instructor_card">
+          <img className="instructor_img" src={instructor1} alt="" />
+          <div className="ml-16 text-white">
+            <p className="text-[24px] font-[700]">Robert</p>
+            <p className="text-[16px] font-[400]">UI/UX Expert</p>
+          </div>
+          <div className="instructor_icon">
+            <img src={fb} alt="" />
+            <img src={ig} alt="" />
+            <img src={tw} alt="" />
+            <img src={md} alt="" />
+          </div>
+        </div> <div className="instructor_card">
           <img className="instructor_img" src={instructor1} alt="" />
           <div className="ml-16 text-white">
             <p className="text-[24px] font-[700]">Robert</p>
@@ -24,6 +49,13 @@ const Instructor = () => {
             <img src={md} alt="" />
           </div>
         </div>
+</div>
+
+
+       
+
+
+
       </div>
     </div>
   );
