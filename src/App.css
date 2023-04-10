@@ -131,7 +131,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  /* line-height: 29px; */
   color: #31374D;
   text-align: center;
   margin-bottom: 60px;
@@ -146,7 +145,7 @@
   color: #31374D;
   position: relative;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 63px;
@@ -160,7 +159,6 @@
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 6.01%, #FF1949 99.04%);
   right: 0;
   bottom: -5px;
-
 }
 
 .carousel_card {
@@ -209,9 +207,18 @@
   width: 50% !important;
 }
 
-.about_bg {
+.about {
   background-image: url('./assets/bg/about-us-bg.png'), url('./assets/bg/circel-bg2.png');
-  background-position: right bottom, left bottom;
+  background-position: right bottom -129%, left bottom -129%;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto;
+}
+
+.about p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444444;
+  margin-bottom: 15px;
 }

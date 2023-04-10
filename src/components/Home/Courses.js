@@ -76,15 +76,17 @@ const Courses = () => {
     },
   };
   return (
-    <div className="container">
-      <Title>
-        <span className="title_border">Our Courses</span>{" "}
-      </Title>
-      <Carousel responsive={responsive} infinite={true} swipeable={true}>
-        {courses.map((course, index) => (
-          <CourseCard key={index} course={course}></CourseCard>
-        ))}
-      </Carousel>
+    <div className=" mb-[120px]">
+      <div className="container">
+        <Title>
+          <span>Our Courses</span>{" "}
+        </Title>
+        <Carousel responsive={responsive} infinite={true} swipeable={true}>
+          {courses.map((course, index) => (
+            <CourseCard key={index} course={course}></CourseCard>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };

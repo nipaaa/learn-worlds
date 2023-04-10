@@ -18,28 +18,31 @@ const AboutUs = () => {
     },
   ];
   return (
-    <div className="about_bg">
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 py-48">
+    <div className="about pb-[120px]">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-[95px] items-center">
         <div>
           <img src={about} alt="" />
         </div>
         <div className="">
           <Title>
-            <span className="text-start about_border">About Us</span>{" "}
+            <span className="mb-[28.56px]">About Us</span>{" "}
           </Title>
-          <Content>
+          <p>
             A ipsum est viverra varius lectus et tempus arcu massa egetpretium
             attellus tristique Amet euismod vel suspendisse nunc, ut ru
             egetpretium trum arcu .
-          </Content>
-          {aboutPoints.map((points, index) => (
-            <Content key={index}>
-              <img className="inline" src={rightArrow} alt="" /> {points.point}
-            </Content>
-          ))}
-          <div>
-            <BlueBtn>Learn More</BlueBtn>
+          </p>
+          <div className="mb-[30px]">
+            {aboutPoints.map((points, index) => (
+              <div className="flex gap-[30px] items-center" key={index}>
+                <img className="inline" src={rightArrow} alt="" />
+                <p>{points.point}</p>
+              </div>
+            ))}
           </div>
+
+          <div></div>
+          <BlueBtn>Learn More</BlueBtn>
         </div>
       </div>
     </div>
