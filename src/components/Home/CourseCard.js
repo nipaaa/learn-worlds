@@ -9,25 +9,23 @@ const CourseCard = ({ course }) => {
       <div className={course.className}>
         <img className="mx-auto" src={course.pic} alt="" />
       </div>
-      <div className="flex flex-col gap-y-4 px-3 pb-8">
-        <div className="-mt-6 text-end">
-          <button className="btn normal-case border-0  bg-[#0A0762] hover:bg-[#0A0762] text-white p-[10px] rounded-lg">
-            {course.name}
-          </button>
+      <div className="flex flex-col gap-y-[15px] px-[15px] pb-[20px]">
+        <div className="-mt-5 text-end">
+          <button className="course_name">{course.name}</button>
         </div>
 
-        <p className="text-[#31374C] text-[16px] font-[700]">{course.title}</p>
-        <p className="text-[#444444] text-[14px]">{course.description}</p>
-        <div className="flex gap-3">
-          <div className="flex gap-1">
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={Halfstar} alt="" />
+        <p className="course_title">{course.title}</p>
+        <p className="course_description">{course.description}</p>
+        <div className="flex gap-[10px]">
+          <div className="flex gap-[4px]">
+            <img className="w-[12px] h-[12px]" src={star} alt="" />
+            <img className="w-[12px] h-[12px]" src={star} alt="" />
+            <img className="w-[12px] h-[12px]" src={star} alt="" />
+            <img className="w-[12px] h-[12px]" src={star} alt="" />
+            <img className="w-[12px] h-[12px]" src={Halfstar} alt="" />
           </div>
           <div>
-            <p className="text-[#444444] text-[11px] font-[400]">
+            <p className="font-[poppins] text-[#444444] text-[11px] font-[400]">
               4.5 ( 50 review)
             </p>
           </div>

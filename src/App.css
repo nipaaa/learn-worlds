@@ -124,10 +124,7 @@
   right: 0;
   transform: rotate(337deg);
   z-index: -1;
-
 }
-
-
 
 .trusted_company h2 {
   font-family: 'Montserrat', sans-serif;
@@ -165,10 +162,42 @@
   bottom: -5px;
 
 }
+
 .carousel_card {
   background: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+}
+
+.carousel_card .course_name {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #0A0762;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.carousel_card .course_title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #31374C;
+}
+
+.carousel_card .course_description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #444444;
+
 }
 
 
