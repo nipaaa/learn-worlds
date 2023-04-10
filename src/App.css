@@ -265,8 +265,30 @@
   transition: 0.3s ease-in-out;
 }
 
-.instructor {
-  box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
-  -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
-  -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);;
+.instructor .instructor_card {
+  position: relative;
+
+}
+
+.instructor .instructor_img {
+  box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+}
+.instructor .instructor_img:hover {
+  box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  -webkit-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  -moz-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  transition: 0.6s ease-out;
+}
+
+.instructor .instructor_icon {
+  position: absolute;
+  background: linear-gradient(88.98deg, #FF047D 2.19%, #FF8804 99.89%);
+  display: flex;
+  gap: 20px;
+  clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+  padding: 16px 32px;
+  bottom: 30%;
+
 }
