@@ -91,7 +91,7 @@ const Event = () => {
 
           <div>
             <div className="grid grid-cols-3 gap-[15px] mb-[15px] ">
-              <div className="date h-[116px] flex flex-col items-center justify-center">
+              <div className="date h-[90px] lg:h-[116px] flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
               </div>
@@ -104,7 +104,7 @@ const Event = () => {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
-              <div className="date h-[116px] flex flex-col items-center justify-center">
+              <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
               </div>
@@ -116,7 +116,7 @@ const Event = () => {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
-              <div className="date h-[116px] flex flex-col items-center justify-center">
+              <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
               </div>
@@ -128,7 +128,7 @@ const Event = () => {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
-              <div className="date h-[116px] flex flex-col items-center justify-center">
+              <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
               </div>

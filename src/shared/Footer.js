@@ -94,19 +94,22 @@ const Footer = () => {
             <h5 className="text-xl font-bold mb-4">Contact</h5>
             <div className="flex flex-col gap-y-3">
               <p>
-                <span className="font-bold">Address :</span> <span className="opacity-50">Shaymoli, Dhaka</span> 
+                <span className="font-bold">Address :</span>{" "}
+                <span className="opacity-50">Shaymoli, Dhaka</span>
               </p>
               <p>
-                <span className="font-bold">Phone :</span> <span className="opacity-50"> +0123456789</span>
+                <span className="font-bold">Phone :</span>{" "}
+                <span className="opacity-50"> +0123456789</span>
               </p>
               <p>
-                <span className="font-bold">Email :</span> <span className="opacity-50">elearning@gmail.com</span> 
+                <span className="font-bold">Email :</span>{" "}
+                <span className="opacity-50">elearning@gmail.com</span>
               </p>
             </div>
           </div>
         </div>
-<hr/>
-        <div className="flex justify-between py-3 opacity-50">
+        <hr />
+        <div className="flex flex-col lg:flex-row justify-between py-3 opacity-50">
           <div>
             <p>© Copyright 2022 NFT ALL RIGHT RESERVED</p>
           </div>

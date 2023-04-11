@@ -36,7 +36,7 @@ const Instructor = () => {
           {instructors.map((instructor, index) => (
             <div key={index} className="instructor_card">
               <img className="instructor_img" src={instructor.pic} alt="" />
-              <div className="ml-16 text-white">
+              <div className="description ml-16 text-white">
                 <p className="text-[24px] font-[700]">{instructor.name}</p>
                 <p className="text-[16px] font-[400]">{instructor.expertise}</p>
               </div>
