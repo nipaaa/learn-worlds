@@ -6,56 +6,49 @@ import fb from "../../assets/icon/fb.png";
 import ig from "../../assets/icon/ig.png";
 import tw from "../../assets/icon/tw.png";
 import md from "../../assets/icon/md.png";
+import Title from "../../utils/Title";
 
 const Instructor = () => {
+  const instructors = [
+    {
+      pic: instructor1,
+      name: "Robert",
+      expertise: "UI/UX Expert",
+    },
+    {
+      pic: instructor2,
+      name: "Angelou",
+      expertise: "Graphics Design",
+    },
+    {
+      pic: instructor3,
+      name: "Smith",
+      expertise: "Digital Marketing",
+    },
+  ];
   return (
-    <div className="instructor">
+    <div className="instructor mb-[120px]">
       <div className="container pb-12">
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-<div className="instructor_card">
-          <img className="instructor_img" src={instructor1} alt="" />
-          <div className="ml-16 text-white">
-            <p className="text-[24px] font-[700]">Robert</p>
-            <p className="text-[16px] font-[400]">UI/UX Expert</p>
-          </div>
-          <div className="instructor_icon">
-            <img src={fb} alt="" />
-            <img src={ig} alt="" />
-            <img src={tw} alt="" />
-            <img src={md} alt="" />
-          </div>
-        </div> <div className="instructor_card">
-          <img className="instructor_img" src={instructor1} alt="" />
-          <div className="ml-16 text-white">
-            <p className="text-[24px] font-[700]">Robert</p>
-            <p className="text-[16px] font-[400]">UI/UX Expert</p>
-          </div>
-          <div className="instructor_icon">
-            <img src={fb} alt="" />
-            <img src={ig} alt="" />
-            <img src={tw} alt="" />
-            <img src={md} alt="" />
-          </div>
-        </div> <div className="instructor_card">
-          <img className="instructor_img" src={instructor1} alt="" />
-          <div className="ml-16 text-white">
-            <p className="text-[24px] font-[700]">Robert</p>
-            <p className="text-[16px] font-[400]">UI/UX Expert</p>
-          </div>
-          <div className="instructor_icon">
-            <img src={fb} alt="" />
-            <img src={ig} alt="" />
-            <img src={tw} alt="" />
-            <img src={md} alt="" />
-          </div>
+        <Title>
+          <span>Meet The Instructors</span>
+        </Title>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[100px]">
+          {instructors.map((instructor, index) => (
+            <div key={index} className="instructor_card">
+              <img className="instructor_img" src={instructor.pic} alt="" />
+              <div className="ml-16 text-white">
+                <p className="text-[24px] font-[700]">{instructor.name}</p>
+                <p className="text-[16px] font-[400]">{instructor.expertise}</p>
+              </div>
+              <div className="instructor_icon">
+                <img src={fb} alt="" />
+                <img src={ig} alt="" />
+                <img src={tw} alt="" />
+                <img src={md} alt="" />
+              </div>
+            </div>
+          ))}
         </div>
-</div>
-
-
-       
-
-
-
       </div>
     </div>
   );

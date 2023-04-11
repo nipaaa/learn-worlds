@@ -265,8 +265,10 @@
   transition: 0.3s ease-in-out;
 }
 
+
 .instructor .instructor_card {
   position: relative;
+
 
 }
 
@@ -274,6 +276,7 @@
   box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
   -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
   -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  overflow: hidden;
 }
 .instructor .instructor_img:hover {
   box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
@@ -290,5 +293,17 @@
   clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
   padding: 16px 32px;
   bottom: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.8s;
+  transform: translateX(-45px);
 
 }
+
+.instructor_card:hover  .instructor_icon{
+  visibility: visible ;
+  opacity: 1;
+  transform: translateX(0);
+ 
+}
+
