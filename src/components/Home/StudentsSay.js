@@ -9,20 +9,20 @@ const StudentsSay = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 1
+      items: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
   return (
     <div className="students_say mb-[120px]">
@@ -30,10 +30,15 @@ const StudentsSay = () => {
         <Title>
           <span>What Our Students Say</span>
         </Title>
-        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}>
-          <div className="flex flex-col lg:flex-row  items-center gap-[30px]">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+        >
+          <div className="lg:px-32 flex flex-col lg:flex-row  items-center gap-[30px]">
             <div className="">
-              <img src={varsha} alt="" />
+              <img className="w-full" src={varsha} alt="" />
             </div>
             <div className="content">
               <p className="review">
@@ -44,7 +49,7 @@ const StudentsSay = () => {
               <p className="name">Varsha Adhikari</p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row  items-center gap-[30px]">
+          <div className="lg:px-32 flex flex-col lg:flex-row  items-center gap-[30px]">
             <div className="">
               <img src={varsha} alt="" />
             </div>
