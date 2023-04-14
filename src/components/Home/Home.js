@@ -7,6 +7,7 @@ import Offer from './Offer';
 import TrustedCompany from './TrustedCompany';
 import Instructor from './Instructor';
 import NewsLetters from './NewsLetters';
+import StudentsSay from './StudentsSay';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Offer/>
             <Event/>
             <Instructor/>
+            <StudentsSay/>
             <NewsLetters/>
         </div>
     );

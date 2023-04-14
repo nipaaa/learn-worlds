@@ -352,6 +352,38 @@ input::placeholder {
   border-radius: 122px 5px 5px 0px;
 }
 
+.students_say {
+  background-image: url("../src/assets/bg/half-circle.png"), url("../src/assets/bg/circle.png"), url("../src/assets/bg/mini-circle.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left bottom, right bottom, top left;
+}
+
+.students_say .content {
+  background-image: url('../src/assets/icon/quotation1.png'), url('../src/assets/icon/quotation2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  padding: 100px;
+}
+
+.students_say .content .review {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #747474;
+  margin-bottom: 30px;
+}
+
+.students_say .content .name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #31374C;
+}
+
 
 
 @media screen and (max-width: 525px) {
@@ -372,7 +404,8 @@ input::placeholder {
     font-size: 18px;
     line-height: 18px;
   }
-  .subscribe_btn{
+
+  .subscribe_btn {
     font-size: 15px;
     line-height: 17px;
     padding: 0 20px;
