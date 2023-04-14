@@ -79,7 +79,7 @@ const Courses = () => {
     <div className=" mb-[120px]">
       <div className="container">
       
-        <Carousel responsive={responsive} infinite={true} swipeable={true}>
+        <Carousel  responsive={responsive} infinite={true} swipeable={true}>
           {courses.map((course, index) => (
             <CourseCard key={index} course={course}></CourseCard>
           ))}

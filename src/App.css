@@ -199,6 +199,32 @@
   bottom: -2px;
   transition: 0.3s;
 }
+.err.container{
+  background-image: url("../src/assets/not-found/dot-b.png"),url("../src/assets/not-found/dot-b.png");
+  background-repeat: no-repeat,no-repeat;
+  background-position: top right, left bottom 17%;
+}
+
+.err h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #31374C;
+  margin-bottom: 30PX;
+}
+
+.err p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #444444;
+}
 
 .carousel_card {
   background: #FFFFFF;
@@ -454,4 +480,8 @@ input::placeholder {
     line-height: 17px;
     padding: 20px 20px;
   }
+  .err.container{
+    background-image: none,none;
+  }
+  
 }

@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo/lw-logo.png";
 import lock from "../assets/logo/lock-Icon.png";
 import GradientBtn from "../utils/GradientBtn";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,10 +18,12 @@ const Header = () => {
        rounded-box w-52 gap-3"
           >
             <li>
-              <a className="">Home</a>
+              <Link to="/" className="">
+                Home
+              </Link>
             </li>
             <li>
-              <a>Courses</a>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
               <a>About Us</a>
@@ -65,12 +67,12 @@ const Header = () => {
         <div class="navbar-start hidden lg:flex items-center">
           <ul class="menu menu-horizontal p-0 text-lg">
             <li>
-              <NavLink to="/" className="">
+              <Link to="/" className="">
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <a>Courses</a>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
               <a>About Us</a>
