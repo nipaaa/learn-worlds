@@ -170,6 +170,36 @@
   bottom: -5px;
 }
 
+.courseTab {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.tabActive {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F94C66;
+  position: relative;
+}
+
+.tabActive::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #F94C66;
+  width: 100%;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
 .carousel_card {
   background: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -395,6 +425,8 @@ input::placeholder {
 .react-multiple-carousel__arrow--left {
   left: calc(0% + 1px) !important;
 }
+
+
 
 
 
