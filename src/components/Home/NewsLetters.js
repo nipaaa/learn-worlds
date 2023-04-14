@@ -17,7 +17,7 @@ const NewsLetters = () => {
               Get our every single notifications
             </p>
             <div className="form-control">
-              <div className="flex justify-between">
+              <div className="flex flex-col lg:flex-row justify-between">
                 <input
                   type="text"
                   placeholder="Enter your email here"
