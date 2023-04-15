@@ -6,6 +6,8 @@ import uiUx from "../../assets/home/ui-ux.png";
 import "react-multi-carousel/lib/styles.css";
 import CourseCard from "./CourseCard";
 import Carousel from "react-multi-carousel";
+import BlueBtn from "../../utils/BlueBtn";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const courses = [
@@ -77,12 +79,16 @@ const Courses = () => {
   return (
     <div className=" mb-[120px]">
       <div className="container">
-      
-        <Carousel  responsive={responsive} infinite={true} swipeable={true}>
+        <Carousel responsive={responsive} infinite={true} swipeable={true}>
           {courses.map((course, index) => (
             <CourseCard key={index} course={course}></CourseCard>
           ))}
         </Carousel>
+        <div className="text-center mt-5">
+          <Link to="/courses">
+            <BlueBtn>View More</BlueBtn>
+          </Link>
+        </div>
       </div>
     </div>
   );
