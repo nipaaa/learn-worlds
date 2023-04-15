@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <div className="container mx-auto">
       <div class="navbar">
-        <a href="#">
+        <Link to="/">
           <img src={logo} alt="" />
-        </a>
+        </Link>
         <div class="dropdown dropdown-left">
           <ul
             tabindex="0"
