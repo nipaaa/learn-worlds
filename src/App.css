@@ -199,9 +199,10 @@
   bottom: -2px;
   transition: 0.3s;
 }
-.err.container{
-  background-image: url("../src/assets/not-found/dot-b.png"),url("../src/assets/not-found/dot-b.png");
-  background-repeat: no-repeat,no-repeat;
+
+.err.container {
+  background-image: url("../src/assets/not-found/dot-b.png"), url("../src/assets/not-found/dot-b.png");
+  background-repeat: no-repeat, no-repeat;
   background-position: top right, left bottom 17%;
 }
 
@@ -452,6 +453,35 @@ input::placeholder {
   left: calc(0% + 1px) !important;
 }
 
+.course_banner h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.course_banner p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.course_banner h5 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
 
 
 
@@ -480,8 +510,9 @@ input::placeholder {
     line-height: 17px;
     padding: 20px 20px;
   }
-  .err.container{
-    background-image: none,none;
+
+  .err.container {
+    background-image: none, none;
   }
-  
+
 }
