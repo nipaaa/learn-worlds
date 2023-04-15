@@ -3,6 +3,7 @@ import SectionBanner from "../../utils/SectionBanner";
 import banner from "../../assets/about/about-banner.png";
 import AboutUs from "../Home/AboutUs";
 import Instructor from "../Home/Instructor";
+import GlobalOnline from "./GlobalOnline";
 
 const AboutPage = () => {
   return (
@@ -14,6 +15,7 @@ const AboutPage = () => {
         bannerImg={banner}
       />
       <AboutUs/>
+      <GlobalOnline/>
       <Instructor/>
     </div>
   );

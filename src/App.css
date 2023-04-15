@@ -484,7 +484,7 @@ input::placeholder {
 
 .activeTab {
   font-family: 'Poppins', sans-serif;
-  /* width: 170px; */
+  width: 170px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -494,6 +494,38 @@ input::placeholder {
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   padding: 20px;
+}
+
+.global_online h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #31374D;
+  margin-bottom: 60px;
+}
+
+.global_online h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #31374D;
+  margin-bottom: 30px;
+}
+
+.global_online p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: rgba(68, 68, 68, 0.85);
 }
 
 
