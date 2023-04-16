@@ -528,6 +528,108 @@ input::placeholder {
   color: rgba(68, 68, 68, 0.85);
 }
 
+.register {
+  background-image: url("../src/assets/about/register.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 73px;
+}
+
+.register h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.register h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #F0F0F0;
+
+}
+
+.register p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #F0F0F0;
+
+}
+
+
+.register .round_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+}
+
+.register .round_card.first {
+  border: 2px solid #FC4D02;
+}
+
+.register .round_card.second {
+  border: 2px solid #0A0762;
+}
+
+.register .round_card.third {
+  border: 2px solid #BEB1E9;
+}
+
+.register .round_card.forth {
+  border: 2px solid #FF1949;
+}
+
+.register .register_form {
+  background: #F5F5F5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 30px 40px 58px;
+}
+
+.register .register_form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 51px;
+  text-align: center !important;
+  color: #31374D;
+  margin-bottom: 45px;
+}
+
+.register .register_form input,
+select {
+  background: #FFFFFF;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 19px 35px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -560,5 +662,40 @@ input::placeholder {
   .err.container {
     background-image: none, none;
   }
+
+  .course_banner h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .course_banner p {
+    margin-bottom: 7px;
+  }
+
+  .course_banner h5 {
+    font-size: 20px;
+
+  }
+
+  .global_online h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    line-height: 38px;
+  }
+
+  .register .register_form {
+    padding: 7px 12px 48px;
+  }
+
+  .register h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+
+  .register .register_form h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
 
 }

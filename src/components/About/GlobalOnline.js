@@ -39,7 +39,7 @@ const GlobalOnline = () => {
             </div>
           ))}
         </div>
-        <div className="px-[90px]">
+        <div className="lg:px-[90px] px-0">
           <iframe
             width="100%"
             height="444"
