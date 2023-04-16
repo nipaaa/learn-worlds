@@ -622,6 +622,53 @@ select {
   margin-bottom: 15px;
 }
 
+.get_touch h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #31374D;
+  margin-bottom: 30px;
+}
+
+.get_touch .content {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.get_touch h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  color: #2E3331;
+}
+
+.get_touch .sub_content {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: rgba(68, 68, 68, 0.85);
+}
+
+
+
+
+
+
+
 
 
 
