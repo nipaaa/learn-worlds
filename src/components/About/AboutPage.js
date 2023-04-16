@@ -5,6 +5,7 @@ import AboutUs from "../Home/AboutUs";
 import Instructor from "../Home/Instructor";
 import GlobalOnline from "./GlobalOnline";
 import Register from "./Register";
+import AboutCarousel from "./AboutCarousel";
 
 const AboutPage = () => {
   return (
@@ -19,6 +20,7 @@ const AboutPage = () => {
       <GlobalOnline />
       <Register />
       <Instructor />
+      <AboutCarousel/>
     </div>
   );
 };

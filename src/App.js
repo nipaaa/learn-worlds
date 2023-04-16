@@ -8,6 +8,8 @@ import NotFound from "./shared/NotFound";
 import AboutPage from "./components/About/AboutPage";
 import ContactPage from "./components/Contact/ContactPage";
 import EventPage from "./components/Event/EventPage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

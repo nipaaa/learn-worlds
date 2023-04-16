@@ -1,5 +1,4 @@
 import React from "react";
-import mobile from "../../assets/home/mobile-app.png";
 import blueprint from "../../assets/home/blueprint.png";
 import location from "../../assets/logo/location.png";
 import clock from "../../assets/logo/clock.png";
