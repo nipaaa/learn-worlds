@@ -32,7 +32,7 @@ const Header = () => {
               <a>Event</a>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
               <a>
@@ -81,7 +81,7 @@ const Header = () => {
               <a>Event</a>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
               <a>
