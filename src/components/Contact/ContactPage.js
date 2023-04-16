@@ -2,6 +2,7 @@ import React from "react";
 import SectionBanner from "../../utils/SectionBanner";
 import banner from "../../assets/contact/banner.png";
 import GetTouch from "./GetTouch";
+import Message from "./Message";
 
 const ContactPage = () => {
   return (
@@ -13,6 +14,7 @@ const ContactPage = () => {
         bannerImg={banner}
       />
       <GetTouch/>
+      <Message/>
     </div>
   );
 };

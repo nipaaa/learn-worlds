@@ -663,6 +663,43 @@ select {
   color: rgba(68, 68, 68, 0.85);
 }
 
+.message h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #31374D;
+  margin-bottom: 60px;
+}
+
+.message input,
+textarea {
+  background: #FFFFFF;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+}
+
+.message textarea {
+  height: 315px;
+}
+
+.message button {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 611px;
+  background: linear-gradient(88.98deg, #FF047D 2.19%, #FF8804 99.89%);
+  border-radius: 15px;
+  padding: 25px 0;
+  text-align: center;
+ 
+}
+
 
 
 
@@ -742,6 +779,10 @@ select {
   .register .register_form h2 {
     font-size: 20px;
     margin-bottom: 7px;
+  }
+  .message button{
+    width: unset;
+    padding: 15px;
   }
 
 
