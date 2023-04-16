@@ -2,10 +2,14 @@ import React from "react";
 import location from "../../assets/contact/location.png";
 import call from "../../assets/contact/call.png";
 import email from "../../assets/contact/email.png";
+import facebook from "../../assets/contact/facebook.png";
+import twitter from "../../assets/contact/twitter.png";
+import medium from "../../assets/contact/medium.png";
+import telegram from "../../assets/contact/telegram.png";
 
 const GetTouch = () => {
   return (
-    <div className="get_touch">
+    <div className="get_touch mb-[120px]">
       <div className="container">
         <h2>Get In Touch</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -39,6 +43,14 @@ const GetTouch = () => {
                   <p className="sub_content">HRmanagement@gmail.com </p>
                 </div>
               </div>
+            </div>
+            <hr className="mb-[30px]" />
+
+            <div className="flex gap-[22px]">
+              <img src={facebook} alt="" />
+              <img src={twitter} alt="" />
+              <img src={medium} alt="" />
+              <img src={telegram} alt="" />
             </div>
           </div>
           <div>
