@@ -37,6 +37,32 @@ const AboutCarousel = () => {
     autoplaySpeed: 2000,
     beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <div className="student_say_slider">
@@ -48,8 +74,8 @@ const AboutCarousel = () => {
               key={index}
               className={index === slideIndex ? "slide slide-active" : "slide"}
             >
-              <div className="slider_card shadow m-3 p-[30px]">
-                <div className="flex items-center gap-[15px] mb-[15px]">
+              <div className="slider_card shadow m-3 lg:p-[30px] p-3">
+                <div className="flex flex-wrap items-center gap-[15px] mb-[15px]">
                   <img src={man3} alt="" />
                   <div>
                     <h5>Sofia</h5>

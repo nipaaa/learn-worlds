@@ -21,7 +21,7 @@ const CourseTab = () => {
         <span>Our Courses</span>{" "}
       </Title>
 
-      <div className="flex justify-center gap-[70px] mb-[30px]">
+      <div className="px-3 flex justify-center gap-[70px] mb-[30px] overflow-y-scroll">
         {tabs.map((tab) => (
           <button
             key={tab?.id}
