@@ -10,21 +10,26 @@ import ContactPage from "./components/Contact/ContactPage";
 import EventPage from "./components/Event/EventPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Login from "./pages/Login/Login";
+import Main from "./shared/Main";
+import Signup from "./pages/Signup/Signup";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<CoursePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/event" element={<EventPage />} />
-        <Route path="/contact" element={<ContactPage  />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Main />}>
+          <Route index element={<Home />} />
+          <Route path="/courses" element={<CoursePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/event" element={<EventPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
-      <Footer />
-    </div>
+    </>
   );
 }
 
