@@ -1,0 +1,32 @@
+.divider::before,
+.divider::after {
+  background-color: rgba(116, 116, 116, 0.35);
+  height: 0.01rem;
+}
+
+.startNow_gradient_btn {
+  background: linear-gradient(88.98deg, #ff047d 2.19%, #ff8804 99.89%);
+  border-radius: 3px;
+  padding: 20px 40px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.notVerified_btn {
+  background-color: #8a9995;
+  border-radius: 3px;
+  padding: 20px 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+}

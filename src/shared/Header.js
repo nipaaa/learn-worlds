@@ -40,9 +40,9 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a>
+              <Link to="/login">
                 <GradientBtn>Log In</GradientBtn>{" "}
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -89,9 +89,9 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a>
+              <Link to="/login">
                 <GradientBtn>Log In</GradientBtn>{" "}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
