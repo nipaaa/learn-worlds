@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import man3 from "../../assets/about/man3.png";
+import Title from "../../utils/Title";
 
 const AboutCarousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -44,29 +45,32 @@ const AboutCarousel = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="student_say_slider">
       <div className="container my-24">
+        <Title>
+          <span className="mb-[28.56px]">What Our Students Say About Us</span>{" "}
+        </Title>
         <div className="slider"></div>
         <Slider {...settings}>
           {images.map((imgg, index) => (
@@ -74,7 +78,7 @@ const AboutCarousel = () => {
               key={index}
               className={index === slideIndex ? "slide slide-active" : "slide"}
             >
-              <div className="slider_card shadow m-3 lg:p-[30px] p-3">
+              <div className="slider_card shadow m-0 lg:m-3 lg:p-[30px] p-3">
                 <div className="flex flex-wrap items-center gap-[15px] mb-[15px]">
                   <img src={man3} alt="" />
                   <div>

@@ -771,6 +771,98 @@ textarea {
 
 
 
+.course_details .price_box {
+  background: rgba(249, 253, 255, 0.45);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 56px 45px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.course_details .price_box h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.course_details .price_box h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 130px;
+  /* line-height: 195px; */
+  color: #31374D;
+  margin-bottom: 10px;
+}
+
+.course_details .price_box p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  color: #31374D;
+}
+
+.course_details .price_box .cart_btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  color: #31374C;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #FF8600, #FF0440) border-box;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  padding: 12px 0;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.course_details .course_details_box {
+  background: rgba(249, 253, 255, 0.45);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.course_details .course_details_box h4 {
+  background: linear-gradient(270deg, #FF6281 0%, #E04363 100%);
+  border-radius: 5px 5px 0px 0px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 29px 0;
+}
+
+.course_details .course_details_box ul {
+  padding: 40px 40px;
+}
+
+.course_details .course_details_box ul li {
+  color: #2E3331;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+
+.course_details .course_details_box ul li::marker {
+  color: #737373;
+}
+
+
+
 
 
 
@@ -853,5 +945,14 @@ textarea {
     padding: 15px;
   }
 
+  .student_say_slider h6 {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
 
+  .student_say_slider p {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
