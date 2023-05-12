@@ -14,12 +14,9 @@ import Login from "./pages/Login/Login";
 import Main from "./shared/Main";
 import Signup from "./pages/Signup/Signup";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
-<<<<<<< HEAD
 import Account from "./pages/Account/Account";
-=======
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
 
->>>>>>> cd20470b3ffbb4b6d0edeadb0901b4358f22fb7a
 
 function App() {
   return (
