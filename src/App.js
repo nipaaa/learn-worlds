@@ -13,7 +13,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Login from "./pages/Login/Login";
 import Main from "./shared/Main";
 import Signup from "./pages/Signup/Signup";
+import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forget-password" element={<ForgetPassword />} />
       </Routes>
     </>
   );
