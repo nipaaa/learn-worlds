@@ -14,6 +14,7 @@ import Login from "./pages/Login/Login";
 import Main from "./shared/Main";
 import Signup from "./pages/Signup/Signup";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
+import Account from "./pages/Account/Account";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/event" element={<EventPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/account" element={<Account />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

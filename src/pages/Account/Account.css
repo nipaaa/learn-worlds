@@ -1,0 +1,15 @@
+.outline-gradiant-button {
+  border: 1.9px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #ff8600, #ff0440) border-box;
+  border-radius: 7px;
+}
+
+.save-gradiant-button {
+  background: linear-gradient(to left, #ff047d 2.19%, #ff8804 99.89%);
+  border-radius: 7px;
+}
+
+.profile-drop-shadow {
+  box-shadow: 4px 4px 10px rgba(17, 17, 18, 0.25);
+}
