@@ -14,6 +14,8 @@ import Login from "./pages/Login/Login";
 import Main from "./shared/Main";
 import Signup from "./pages/Signup/Signup";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
+import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/" element={<Main />}>
           <Route index element={<Home />} />
           <Route path="/courses" element={<CoursePage />} />
+          <Route path="/courseDetails" element={<CourseDetailsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/event" element={<EventPage />} />
           <Route path="/contact" element={<ContactPage />} />
