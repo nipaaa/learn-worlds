@@ -2,12 +2,15 @@ import React from "react";
 import BookNowBtn from "../../utils/BookNowBtn";
 import star from "../../assets/logo/star.png";
 import Halfstar from "../../assets/logo/half-star.png";
+import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
   return (
     <div className="m-[15px] carousel_card">
       <div className={course.className}>
-        <img className="mx-auto" src={course.pic} alt="" />
+        <Link to="/courseDetails">
+          <img className="mx-auto" src={course.pic} alt="" />
+        </Link>
       </div>
       <div className="flex flex-col gap-y-[15px] px-[15px] pb-[20px]">
         <div className="-mt-5 text-end">

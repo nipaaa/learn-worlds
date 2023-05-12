@@ -58,8 +58,12 @@ const Account = () => {
         </div>
         <div className="w-5/6">
           <div className="w-full ">
-            <label>Full Name</label>
-            <input type="text" required className="block border w-full" />
+            <label className="font-[400] text-[14x] mb-[10px]">FULL NAME</label>
+            <input
+              type="text"
+              required
+              className="block border w-full h-[60px]"
+            />
           </div>
         </div>
       </div>
