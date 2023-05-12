@@ -13,3 +13,9 @@
 .profile-drop-shadow {
   box-shadow: 4px 4px 10px rgba(17, 17, 18, 0.25);
 }
+
+.input-border {
+  padding: 20px 27px;
+  border: 1px solid rgba(116, 116, 116, 0.3);
+  border-radius: 7px;
+}
