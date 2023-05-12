@@ -4,7 +4,7 @@ import Illustration from "./../../assets/illustration/loginPic.png";
 import Square from "./../../assets/illustration/square.png";
 import GoogleLogo from "./../../assets/illustration/Google.png";
 import "./Login.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -59,7 +59,7 @@ const Login = () => {
                 />
                 <label className="flex justify-end">
                   <span className="font-[400] text-[14px] text-[#FF1949]">
-                    Forgot password?
+                    <Link to="/forget-password">Forgot password?</Link>
                   </span>
                 </label>
                 <div className="startNow_gradient_btn cursor-pointer">
