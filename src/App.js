@@ -16,7 +16,7 @@ import Signup from "./pages/Signup/Signup";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import Account from "./pages/Account/Account";
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
-
+import ChangePassword from "./pages/ChangePassword/ChangePassword";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/change-password" element={<ChangePassword />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
