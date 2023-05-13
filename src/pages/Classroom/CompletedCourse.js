@@ -6,7 +6,14 @@ const CompletedCourse = () => {
   const courses = [];
 
   if (courses.length === 0) {
-    return <NoCourese content={{ name: "Completed", description: "fjkfd" }} />;
+    return (
+      <NoCourese
+        content={{
+          name: "Completed",
+          description: "You Don't Have Any Course Completed",
+        }}
+      />
+    );
   }
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[30px]">
