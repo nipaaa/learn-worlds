@@ -17,6 +17,7 @@ import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import Account from "./pages/Account/Account";
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
 import ChangePassword from "./pages/ChangePassword/ChangePassword";
+import Classroom from "./pages/Classroom/Classroom";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/account" element={<Account />} />
           <Route path="/change-password" element={<ChangePassword />} />
+          <Route path="/classroom" element={<Classroom />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
