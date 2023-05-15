@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo/lw-logo.png";
 import lock from "../assets/logo/lock-Icon.png";
 import GradientBtn from "../utils/GradientBtn";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import bell from "../assets/illustration/bell.png";
+import notficationbell from "../assets/illustration/bell-notified.png";
 
 const Header = () => {
+  const { user } = useSelector((state) => state.auth);
+const []=
   return (
     <div className="container mx-auto">
       <div class="navbar">
@@ -40,9 +45,13 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <Link to="/login">
-                <GradientBtn>Log In</GradientBtn>{" "}
-              </Link>
+              {user ? (
+                <p>fjk</p>
+              ) : (
+                <Link to="/login">
+                  <GradientBtn>Log In</GradientBtn>{" "}
+                </Link>
+              )}
             </li>
           </ul>
 
@@ -89,9 +98,37 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <Link to="/login">
-                <GradientBtn>Log In</GradientBtn>{" "}
-              </Link>
+              {user ? (
+                <div>
+                  <img className="w-[23px]" src={bell} alt="" />
+                  <img className="w-[23px]" src={notficationbell} alt="" />
+
+                  <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn border-0 m-1">
+                      <img
+                        className="w-[36px] h-[36px] rounded-full object-cover border-[2px] border-[#1D1B1B]"
+                        src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+                        alt=""
+                      />
+                    </label>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu p-2 border-[1px] border-[#acacacb3] bg-white rounded-[7px] w-52"
+                    >
+                      <li>
+                        <a>Item 1</a>
+                      </li>
+                      <li>
+                        <a>Item 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <Link to="/login">
+                  <GradientBtn>Log In</GradientBtn>{" "}
+                </Link>
+              )}
             </li>
           </ul>
         </div>
