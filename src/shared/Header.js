@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo/lw-logo.png";
 import lock from "../assets/logo/lock-Icon.png";
 import GradientBtn from "../utils/GradientBtn";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import bell from "../assets/illustration/bell.png";
+import notficationbell from "../assets/illustration/bell-notified.png";
+import profile from "../assets/icon/profile.png";
+import classroom from "../assets/icon/classroom.png";
+import history from "../assets/icon/history.png";
+import password from "../assets/icon/change-password.png";
+import exit from "../assets/icon/exit.png";
 
 const Header = () => {
+  const { auth, notification } = useSelector((state) => state);
+  const { notification: notificationData } = notification;
+
   return (
     <div className="container mx-auto">
       <div class="navbar">
@@ -40,9 +51,104 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <Link to="/login">
-                <GradientBtn>Log In</GradientBtn>{" "}
-              </Link>
+              {auth?.user ? (
+                <>
+                  {/* <div>
+                    <img className="w-[23px]" src={bell} alt="" />
+                    <img className="w-[23px]" src={notficationbell} alt="" />
+
+                    <div className="dropdown dropdown-end">
+                      <label tabIndex={0} className="btn border-0 m-1">
+                        <img
+                          className="w-[36px] h-[36px] rounded-full object-cover border-[2px] border-[#1D1B1B]"
+                          src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+                          alt=""
+                        />
+                      </label>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content menu border-[1px] px-[30px] py-[20px] border-[#acacacb3] bg-white rounded-[7px] "
+                      >
+                        <li className="border-b-[1px] border-[#74747466]">
+                          <div className="flex items-center px-0">
+                            <div className="w-[36px] h-[36px] rounded-full">
+                              <img
+                                className="w-full h-full rounded-full object-cover border-[2px] border-[#1D1B1B]"
+                                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="mt-2">
+                              <h5 className="font-[600] text-[14px] text-[#363D50]  leading-[0]">
+                                Mohiuddin Khan
+                              </h5>
+                              <p className="font-[400] text-[10px] text-[#363d50d9] p-0 m-0">
+                                mohi.opediatech@gmail.com
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="flex flex-col gap-[15px] mt-[14px]">
+                          <Link className="w-full p-0">
+                            <img
+                              className="w-[18px] h-[18px] object-contain"
+                              src={profile}
+                              alt=""
+                            />
+                            <p className="font-[400] text-[14px] text-[#777777]">
+                              Profile
+                            </p>
+                          </Link>
+                          <Link className="w-full p-0">
+                            <img
+                              className="w-[18px] h-[18px] object-contain"
+                              src={classroom}
+                              alt=""
+                            />
+                            <p className="font-[400] text-[14px] text-[#777777]">
+                              Classroom
+                            </p>
+                          </Link>
+                          <Link className="w-full p-0">
+                            <img
+                              className="w-[18px] h-[18px] object-contain"
+                              src={history}
+                              alt=""
+                            />
+                            <p className="font-[400] text-[14px] text-[#777777]">
+                              Payment History
+                            </p>
+                          </Link>
+                          <Link className="w-full p-0">
+                            <img
+                              className="w-[18px] h-[18px] object-contain"
+                              src={password}
+                              alt=""
+                            />
+                            <p className="font-[400] text-[14px] text-[#777777]">
+                              Change Password
+                            </p>
+                          </Link>
+                          <Link className="w-full p-0">
+                            <img
+                              className="w-[18px] h-[18px] object-contain"
+                              src={exit}
+                              alt=""
+                            />
+                            <p className="font-[400] text-[14px] text-[#777777]">
+                              Logout
+                            </p>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> */}
+                </>
+              ) : (
+                <Link to="/login">
+                  <GradientBtn>Log In</GradientBtn>{" "}
+                </Link>
+              )}
             </li>
           </ul>
 
@@ -89,9 +195,124 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <Link to="/login">
-                <GradientBtn>Log In</GradientBtn>{" "}
-              </Link>
+              {auth?.user ? (
+                <div>
+                  {notificationData.length > 0 ? (
+                    <div className="dropdown dropdown-bottom dropdown-end">
+                      <label tabIndex={0} className="btn border-0 ">
+                        <img
+                          className="w-[23px]"
+                          src={notficationbell}
+                          alt=""
+                        />
+                      </label>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                      >
+                        <li>
+                          <a>Item 1</a>
+                        </li>
+                        <li>
+                          <a>Item 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : (
+                    <img className="w-[23px]" src={bell} alt="" />
+                  )}
+
+                  <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn border-0 m-1">
+                      <img
+                        className="w-[36px] h-[36px] rounded-full object-cover border-[2px] border-[#1D1B1B]"
+                        src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+                        alt=""
+                      />
+                    </label>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu border-[1px] px-[30px] py-[20px] border-[#acacacb3] bg-white rounded-[7px] "
+                    >
+                      <li className="border-b-[1px] border-[#74747466]">
+                        <div className="flex items-center px-0">
+                          <div className="w-[36px] h-[36px] rounded-full">
+                            <img
+                              className="w-full h-full rounded-full object-cover border-[2px] border-[#1D1B1B]"
+                              src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div className="mt-2">
+                            <h5 className="font-[600] text-[14px] text-[#363D50]  leading-[0]">
+                              Mohiuddin Khan
+                            </h5>
+                            <p className="font-[400] text-[10px] text-[#363d50d9] p-0 m-0">
+                              mohi.opediatech@gmail.com
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="flex flex-col gap-[15px] mt-[14px]">
+                        <Link className="w-full p-0" to="/account">
+                          <img
+                            className="w-[18px] h-[18px] object-contain"
+                            src={profile}
+                            alt=""
+                          />
+                          <p className="font-[400] text-[14px] text-[#777777]">
+                            Profile
+                          </p>
+                        </Link>
+                        <Link className="w-full p-0" to="/classroom">
+                          <img
+                            className="w-[18px] h-[18px] object-contain"
+                            src={classroom}
+                            alt=""
+                          />
+                          <p className="font-[400] text-[14px] text-[#777777]">
+                            Classroom
+                          </p>
+                        </Link>
+                        <Link className="w-full p-0">
+                          <img
+                            className="w-[18px] h-[18px] object-contain"
+                            src={history}
+                            alt=""
+                          />
+                          <p className="font-[400] text-[14px] text-[#777777]">
+                            Payment History
+                          </p>
+                        </Link>
+                        <Link className="w-full p-0" to="/change-password">
+                          <img
+                            className="w-[18px] h-[18px] object-contain"
+                            src={password}
+                            alt=""
+                          />
+                          <p className="font-[400] text-[14px] text-[#777777]">
+                            Change Password
+                          </p>
+                        </Link>
+                        <Link className="w-full p-0">
+                          <img
+                            className="w-[18px] h-[18px] object-contain"
+                            src={exit}
+                            alt=""
+                          />
+                          <p className="font-[400] text-[14px] text-[#777777]">
+                            Logout
+                          </p>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <Link to="/login">
+                  <GradientBtn>Log In</GradientBtn>{" "}
+                </Link>
+              )}
             </li>
           </ul>
         </div>
