@@ -25,13 +25,41 @@ const Reviews = () => {
     },
   ];
   return (
-    <div className="reviews">
+    <div className="reviews mb-[50px]">
       <h2>Reviews</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[50px]">
         {reviews.map((review, index) => (
           <div className="review_card text-center" key={index}>
             <img className="mb-[6px] mx-auto" src={review.pic} alt="" />
             <h5>{review.name}</h5>
+            <div className="rating rating-sm">
+              <input
+                type="radio"
+                name="rating-6"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-6"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-6"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-6"
+                className="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-6"
+                className="mask mask-star-2 bg-orange-400"
+              />
+            </div>
             <p>{review.comment}</p>
           </div>
         ))}

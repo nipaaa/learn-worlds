@@ -3,10 +3,14 @@ import cart from "../../assets/course/cart.png";
 import arrow from "../../assets/course/arrow.png";
 import instructor from "../../assets/course/instructor.png";
 import Reviews from "./Reviews";
+import facebook from "../../assets/contact/facebook.png";
+import twitter from "../../assets/contact/twitter.png";
+import medium from "../../assets/contact/medium.png";
+import telegram from "../../assets/contact/telegram.png";
 
 const CourseDetails = () => {
   return (
-    <div className="course_details">
+    <div className="course_details mb-[57px]">
       <div className="container">
         <h3 className="mb-[70px] text-[#31374D] text-[34px] font-[600] ">
           Web Development
@@ -105,6 +109,7 @@ const CourseDetails = () => {
                   Web Developer
                 </p>
               </div>
+
               <p>
                 Consectetur adipiscing elit ut aliquam, purus sit ametluctus
                 venenatis, lectus magna fringilla urna, porttitor rhoncus dolor
@@ -124,6 +129,17 @@ const CourseDetails = () => {
                 venenatis.
               </p>
               <Reviews />
+              <div>
+                <h2 className="text-[28px] font-[700] text-[#31374D] leading-[34px] mb-[30px]">
+                  Share this course
+                </h2>
+                <div className="flex gap-[22px]">
+                  <img src={facebook} alt="" />
+                  <img src={twitter} alt="" />
+                  <img src={telegram} alt="" />
+                  <img src={medium} alt="" />
+                </div>
+              </div>
             </div>
           </div>
           <div>
