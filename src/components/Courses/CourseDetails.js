@@ -7,6 +7,7 @@ import facebook from "../../assets/contact/facebook.png";
 import twitter from "../../assets/contact/twitter.png";
 import medium from "../../assets/contact/medium.png";
 import telegram from "../../assets/contact/telegram.png";
+import Rating from "./Rating";
 
 const CourseDetails = () => {
   return (
@@ -128,6 +129,7 @@ const CourseDetails = () => {
                 consectetur adipiscing elit ut aliquam, purus sit ametluctus
                 venenatis.
               </p>
+              <Rating />
               <Reviews />
               <div>
                 <h2 className="text-[28px] font-[700] text-[#31374D] leading-[34px] mb-[30px]">
