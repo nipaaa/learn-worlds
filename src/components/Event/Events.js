@@ -3,6 +3,7 @@ import blueprint from "../../assets/home/blueprint.png";
 import location from "../../assets/logo/location.png";
 import clock from "../../assets/logo/clock.png";
 import calender from "../../assets/logo/calender.png";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   return (
@@ -10,7 +11,7 @@ const Events = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((event, index) => (
-            <div key={index} className="rounded-[5px]">
+            <Link to="/eventDetails" key={index} className="rounded-[5px]">
               <img className="w-full" src={blueprint} alt="" />
 
               <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">
@@ -47,7 +48,7 @@ const Events = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

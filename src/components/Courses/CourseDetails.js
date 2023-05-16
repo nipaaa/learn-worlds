@@ -7,6 +7,9 @@ import facebook from "../../assets/contact/facebook.png";
 import twitter from "../../assets/contact/twitter.png";
 import medium from "../../assets/contact/medium.png";
 import telegram from "../../assets/contact/telegram.png";
+import Rating from "./Rating";
+import Curriculum from "./Curriculum";
+import { Link } from "react-router-dom";
 
 const CourseDetails = () => {
   return (
@@ -109,6 +112,7 @@ const CourseDetails = () => {
                   Web Developer
                 </p>
               </div>
+              <Curriculum />
 
               <p>
                 Consectetur adipiscing elit ut aliquam, purus sit ametluctus
@@ -128,16 +132,25 @@ const CourseDetails = () => {
                 consectetur adipiscing elit ut aliquam, purus sit ametluctus
                 venenatis.
               </p>
+              <Rating />
               <Reviews />
               <div>
                 <h2 className="text-[28px] font-[700] text-[#31374D] leading-[34px] mb-[30px]">
                   Share this course
                 </h2>
                 <div className="flex gap-[22px]">
-                  <img src={facebook} alt="" />
-                  <img src={twitter} alt="" />
-                  <img src={telegram} alt="" />
-                  <img src={medium} alt="" />
+                  <Link to="!#">
+                    <img src={facebook} alt="" />
+                  </Link>
+                  <Link to="!#">
+                    <img src={twitter} alt="" />
+                  </Link>
+                  <Link to="!#">
+                    <img src={telegram} alt="" />
+                  </Link>
+                  <Link to="!#">
+                    <img src={medium} alt="" />
+                  </Link>
                 </div>
               </div>
             </div>

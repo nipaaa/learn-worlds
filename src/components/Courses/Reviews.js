@@ -32,33 +32,37 @@ const Reviews = () => {
           <div className="review_card text-center" key={index}>
             <img className="mb-[6px] mx-auto" src={review.pic} alt="" />
             <h5>{review.name}</h5>
-            <div className="rating rating-sm">
+            <div className="rating rating-sm gap-[8px]">
               <input
                 type="radio"
                 name="rating-6"
-                className="mask mask-star-2 bg-orange-400"
+                className="w-[20px] h-[20px] mask mask-star bg-[#FF7A00]"
               />
+             
               <input
                 type="radio"
                 name="rating-6"
-                className="mask mask-star-2 bg-orange-400"
+                className="w-[20px] h-[20px] mask mask-star bg-[#FF7A00]"
               />
+             
               <input
                 type="radio"
                 name="rating-6"
-                className="mask mask-star-2 bg-orange-400"
+                className="w-[20px] h-[20px] mask mask-star bg-[#FF7A00]"
               />
+             
               <input
                 type="radio"
                 name="rating-6"
-                className="mask mask-star-2 bg-orange-400"
-                checked
+                className="w-[20px] h-[20px] mask mask-star bg-[#FF7A00]"
               />
+             
               <input
                 type="radio"
                 name="rating-6"
-                className="mask mask-star-2 bg-orange-400"
+                className="w-[20px] h-[20px] mask mask-star bg-[#C4C4C4]"
               />
+             
             </div>
             <p>{review.comment}</p>
           </div>
