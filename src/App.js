@@ -18,6 +18,8 @@ import Account from "./pages/Account/Account";
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
 import ChangePassword from "./pages/ChangePassword/ChangePassword";
 import Classroom from "./pages/Classroom/Classroom";
+import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/classroom" element={<Classroom />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
