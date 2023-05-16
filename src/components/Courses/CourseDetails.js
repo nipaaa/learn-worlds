@@ -2,16 +2,21 @@ import React from "react";
 import cart from "../../assets/course/cart.png";
 import arrow from "../../assets/course/arrow.png";
 import instructor from "../../assets/course/instructor.png";
+import Reviews from "./Reviews";
+import facebook from "../../assets/contact/facebook.png";
+import twitter from "../../assets/contact/twitter.png";
+import medium from "../../assets/contact/medium.png";
+import telegram from "../../assets/contact/telegram.png";
 
 const CourseDetails = () => {
   return (
-    <div className="course_details">
+    <div className="course_details mb-[57px]">
       <div className="container">
         <h3 className="mb-[70px] text-[#31374D] text-[34px] font-[600] ">
           Web Development
         </h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[61px]">
-          <div className="col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-[61px]">
+          <div className="col-span-3">
             <div className="mb-[50px]">
               <iframe
                 width="100%"
@@ -104,6 +109,7 @@ const CourseDetails = () => {
                   Web Developer
                 </p>
               </div>
+
               <p>
                 Consectetur adipiscing elit ut aliquam, purus sit ametluctus
                 venenatis, lectus magna fringilla urna, porttitor rhoncus dolor
@@ -111,8 +117,8 @@ const CourseDetails = () => {
                 est ullamcorper eget nulla facilisietiam dignissim diam quis
                 enim lobortis scelerisque fermentum dui faucibus in ornare quam
                 viverra.
-              </p> 
-              <p>
+              </p>
+              <p className="mb-[50px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis lectus magna fringilla
                 urna, porttitor rhoncus dolor purus non enim praesent elementum
@@ -122,6 +128,18 @@ const CourseDetails = () => {
                 consectetur adipiscing elit ut aliquam, purus sit ametluctus
                 venenatis.
               </p>
+              <Reviews />
+              <div>
+                <h2 className="text-[28px] font-[700] text-[#31374D] leading-[34px] mb-[30px]">
+                  Share this course
+                </h2>
+                <div className="flex gap-[22px]">
+                  <img src={facebook} alt="" />
+                  <img src={twitter} alt="" />
+                  <img src={telegram} alt="" />
+                  <img src={medium} alt="" />
+                </div>
+              </div>
             </div>
           </div>
           <div>
