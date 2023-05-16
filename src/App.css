@@ -514,6 +514,9 @@ input::placeholder {
   border-radius: unset !important;
   height: 18px;
 }
+.event_details .time_venue{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
 
 .global_online h2 {
   font-family: "Montserrat", sans-serif;
