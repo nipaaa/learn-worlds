@@ -5,7 +5,7 @@
 
 
 .container {
-  max-width: 1170px;
+  max-width: 1420px;
 }
 
 .navbar {
@@ -859,6 +859,34 @@ textarea {
 
 .course_details .course_details_box ul li::marker {
   color: #737373;
+}
+
+.reviews .review_card {
+  border: 1px solid #FF7A00;
+  border-radius: 30px;
+  padding: 30px 25px;
+}
+.reviews h2{
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #31374D;
+margin-bottom: 61px;
+}
+.reviews h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #3E005B;
+  margin-bottom: 5px;
+}
+.reviews p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: rgba(116, 116, 116, 0.8);
 }
 
 
