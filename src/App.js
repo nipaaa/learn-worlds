@@ -18,6 +18,7 @@ import Account from "./pages/Account/Account";
 import CourseDetailsPage from "./components/Courses/CourseDetailsPage";
 import ChangePassword from "./pages/ChangePassword/ChangePassword";
 import Classroom from "./pages/Classroom/Classroom";
+import EventDetailsPage from "./components/Event/EventDetailsPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/courseDetails" element={<CourseDetailsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/event" element={<EventPage />} />
+          <Route path="/eventDetails" element={<EventDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/account" element={<Account />} />
