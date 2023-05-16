@@ -208,14 +208,24 @@ const Header = () => {
                       </label>
                       <ul
                         tabIndex={0}
-                        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                        className="dropdown-content menu p-[20px]  border-[1px]  border-[#acacacb3] bg-white rounded-[7px] w-[243px]"
                       >
-                        <li>
-                          <a>Item 1</a>
-                        </li>
-                        <li>
-                          <a>Item 2</a>
-                        </li>
+                        <p className="font-[600] text-[14px] text-[#363D50]">
+                          Notification
+                        </p>
+                        {notificationData.map((item, idx) => (
+                          <li className="border-b-[1px] border-[#74747466] ">
+                            <p className="font-[400] text-[12px] text-[#000000d9] leading-5 pt-[18px] pb-0 px-[5px]">
+                              {item?.topic}
+                            </p>
+                            <p className="font-[400] text-[9px] text-[#777777] pt-0 px-[5px]">
+                              {item?.date}
+                            </p>
+                          </li>
+                        ))}
+                        <p className="font-[400] text-[12px] text-[#2172F2] mt-[11px]">
+                          View all notification
+                        </p>
                       </ul>
                     </div>
                   ) : (
@@ -253,8 +263,8 @@ const Header = () => {
                           </div>
                         </div>
                       </li>
-                      <li className="flex flex-col gap-[15px] mt-[14px]">
-                        <Link className="w-full p-0" to="/account">
+                      <li className="flex flex-col gap-[15px] mt-[14px] ">
+                        <Link className="w-full p-0 " to="/account">
                           <img
                             className="w-[18px] h-[18px] object-contain"
                             src={profile}
