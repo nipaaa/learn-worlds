@@ -16,17 +16,21 @@ const CoursesTab = () => {
     setTab(data?.name);
   };
   return (
-    <div>
-      <div className="p-3 flex justify-center gap-[20px] mb-[30px] overflow-y-scroll">
-        {tabs.map((tab) => (
-          <button
-            key={tab?.id}
-            onClick={() => handleMenu(tab)}
-            className={`${activeMenu === tab?.id ? "activeTab" : "courseTab"}`}
-          >
-            {tab?.name}
-          </button>
-        ))}
+    <div className="">
+      <div className="mb-[90px]">
+        <div className="course_tab p-3 flex gap-[20px]   overflow-x-auto ">
+          {tabs.map((tab) => (
+            <button
+              key={tab?.id}
+              onClick={() => handleMenu(tab)}
+              className={`${
+                activeMenu === tab?.id ? "activeTab" : "courseTab"
+              }`}
+            >
+              {tab?.name}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div>

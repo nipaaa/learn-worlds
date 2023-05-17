@@ -184,6 +184,11 @@
   bottom: -5px;
 }
 
+.course_tab {
+  max-width: 1180px;
+  margin: auto;
+}
+
 .courseTab {
   background: #FCFEFF;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
@@ -194,6 +199,7 @@
   font-size: 18px;
   line-height: 27px;
   color: #31374D;
+  white-space: nowrap;
 }
 
 .tabActive {
@@ -467,6 +473,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .progress {
