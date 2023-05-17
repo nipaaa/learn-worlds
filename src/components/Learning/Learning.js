@@ -2,7 +2,7 @@ import React from "react";
 
 const Learning = () => {
   return (
-    <div className="learning">
+    <div className="learning mb-[200px]">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[47px] mb-[20px]">
           <div className="col-span-2">

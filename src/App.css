@@ -893,11 +893,11 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   text-transform: capitalize;
   color: #31374c;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .event .content {

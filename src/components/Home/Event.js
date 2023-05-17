@@ -13,12 +13,12 @@ const Event = () => {
         <Title>
           <span>Join Event</span>
         </Title>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[70px]">
           <div className="rounded-[5px]">
             <img className="w-full" src={mobile} alt="" />
 
-            <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">
-              <div className="flex justify-between">
+            <div className="bg-[#EEEEEE] p-[30px] rounded-b-[5px] flex flex-col ">
+              <div className="flex justify-between mb-[40px]">
                 <div className="flex items-center gap-3">
                   <img className="me-1" src={location} alt="" />
                   <p className="text-[#5F6765] text-[14px]"> Dhaka</p>
@@ -30,10 +30,10 @@ const Event = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-[#31374C] text-[16px] font-[600]">
+              <p className="text-[#31374C] text-[20px] font-[600] mb-[30px]">
                 Web Development and Mobile app Development
               </p>
-              <hr />
+              <hr className="mb-[18px]" />
               <div className="flex justify-between">
                 <div className="flex items-center gap-3">
                   <img className="me-1" src={calender} alt="" />
@@ -53,8 +53,8 @@ const Event = () => {
           <div className="rounded-[5px]">
             <img className="w-full" src={blueprint} alt="" />
 
-            <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">
-              <div className="flex justify-between">
+            <div className="bg-[#EEEEEE] p-[30px] rounded-b-[5px] flex flex-col">
+              <div className="flex justify-between mb-[40px]">
                 <div className="flex items-center gap-3">
                   <img className="me-1" src={location} alt="" />
                   <p className="text-[#5F6765] text-[14px]"> Dhaka</p>
@@ -66,11 +66,11 @@ const Event = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-[#31374C] text-[16px] font-[600]">
+              <p className="text-[#31374C] text-[20px] font-[600] mb-[30px]">
                 A Career in UI UX Skills, Tools, and a Blueprint to Pivot Into
                 the Field
               </p>
-              <hr />
+              <hr className="mb-[18px]" />
               <div className="flex justify-between">
                 <div className="flex items-center gap-3">
                   <img className="me-1" src={calender} alt="" />
@@ -90,7 +90,7 @@ const Event = () => {
           </div>
 
           <div>
-            <div className="grid grid-cols-3 gap-[15px] mb-[15px] ">
+            <div className="grid grid-cols-3 gap-[15px] mb-[32px] items-center ">
               <div className="date h-[90px] lg:h-[116px] flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
@@ -103,7 +103,7 @@ const Event = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
+            <div className="grid grid-cols-3 gap-[15px] mb-[32px] items-center">
               <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
@@ -115,7 +115,7 @@ const Event = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
+            <div className="grid grid-cols-3 gap-[15px] mb-[32px] items-center">
               <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
@@ -127,7 +127,7 @@ const Event = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-[15px] mb-[15px]">
+            <div className="grid grid-cols-3 gap-[15px] mb-[32px] items-center">
               <div className="date h-[90px] lg:h-[116px]  flex flex-col items-center justify-center">
                 <p>20</p>
                 <p>June</p>
