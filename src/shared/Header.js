@@ -3,7 +3,7 @@ import logo from "../assets/logo/lw-logo.png";
 import lock from "../assets/logo/lock-Icon.png";
 import GradientBtn from "../utils/GradientBtn";
 import { Link, NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import bell from "../assets/illustration/bell.png";
 import notficationbell from "../assets/illustration/bell-notified.png";
 import profile from "../assets/icon/profile.png";
@@ -11,10 +11,16 @@ import classroom from "../assets/icon/classroom.png";
 import history from "../assets/icon/history.png";
 import password from "../assets/icon/change-password.png";
 import exit from "../assets/icon/exit.png";
+import { userLoggedOut } from "../features/auth/authSlice";
 
 const Header = () => {
   const { auth, notification } = useSelector((state) => state);
   const { notification: notificationData } = notification;
+  const dispatch = useDispatch();
+
+  const handleLogOut = () => {
+    dispatch(userLoggedOut());
+  };
 
   return (
     <div className="container mx-auto">
@@ -304,7 +310,7 @@ const Header = () => {
                             Change Password
                           </p>
                         </Link>
-                        <Link className="w-full p-0">
+                        <Link className="w-full p-0" onClick={handleLogOut}>
                           <img
                             className="w-[18px] h-[18px] object-contain"
                             src={exit}
