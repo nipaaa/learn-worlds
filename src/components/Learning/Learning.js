@@ -4,10 +4,10 @@ const Learning = () => {
   return (
     <div className="learning">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[47px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[47px] mb-[20px]">
           <div className="col-span-2">
             <h6>Web Development</h6>
-            <p>by Angelou Canales </p>
+            <p className="name">by Angelou Canales </p>
           </div>
           <div>
             <h6>Course Content</h6>
@@ -20,10 +20,10 @@ const Learning = () => {
             />
           </div>
         </div>
-
+        <hr className="mb-[20px]" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[47px]">
           <div className="col-span-2">
-            <div className="mb-[20px]">
+            <div className="overflow-hidden rounded-[10px] mb-[20px]">
               <iframe
                 width="100%"
                 height="507px"
@@ -37,7 +37,7 @@ const Learning = () => {
             <h2>Chapter 01: Course Introductions</h2>
 
             <h4>What you’ll learn</h4>
-            <p>
+            <p className="content">
               Vestibulum amet sed ultricies vitae sit quis commodo viverra
               aliquam tellus, malesuada congue mattis in proin ac posuere arcu,
               lacus pulvinar diam massa sem phasellus non sagittis, volutpat

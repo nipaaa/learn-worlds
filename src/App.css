@@ -998,6 +998,38 @@ select {
   letter-spacing: -0.01em;
 }
 
+.learning .name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #8A9995;
+}
+
+.learning h2 {
+  color: #2E3331;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+
+.learning h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #2E3331;
+  margin-bottom: 15px;
+}
+
+.learning .content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #8A9995;
+}
 
 
 
