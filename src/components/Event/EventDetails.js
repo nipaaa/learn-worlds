@@ -71,33 +71,43 @@ const EventDetails = () => {
           </div>
 
           <div>
-            <h2>Recent Event</h2>
-            <div>
-              <img className="mb-[15px]" src={card} alt="" />
-              <div className="flex justify-between mb-[25px]">
-                <div>
-                  <div className="flex gap-[10px] items-center">
-                    <img src={location} alt="" />
-                    <p className="text-[#5F6765] text-[14px] font-[400]">
-                      Dhaka
-                    </p>
+            <h3 className="mb-[25px]">Recent Event</h3>
+            {[1, 2].map((eventttt, index) => (
+              <div key={index} className="event_card mb-[50px]">
+                <img className="mb-[15px]" src={card} alt="" />
+                <div className="px-[15px] pt-[15px] pb-[27px] ">
+                  <div className="flex justify-between mb-[25px]">
+                    <div>
+                      <div className="flex gap-[10px] items-center">
+                        <img src={location} alt="" />
+                        <p className="text-[#5F6765] text-[14px] font-[400]">
+                          Dhaka
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex gap-[10px] items-center">
+                        <img src={clock} alt="" />
+                        <p className="text-[#5F6765] text-[14px] font-[400]">
+                          12.00 PM-03.00 AM
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <div className="flex gap-[10px] items-center">
-                    <img src={clock} alt="" />
-                    <p className="text-[#5F6765] text-[14px] font-[400]">
-                      12.00 PM-03.00 AM
-                    </p>
+                  <p className="text-[#31374D] text-[22px] font-[600] leading-[27px] mb-[25px]">
+                    Web Development and Mobile app Development
+                  </p>
+                  <div className="flex gap-[22px]">
+                    <button className="w-full rounded-[15px] py-[14px] bg-[#0C1F38] text-white font-[600] text-[16px]">
+                      Join free
+                    </button>
+                    <button className="w-full py-[14px] border-2 border-[#000000] rounded-[15px] text-[#31374D] font-[600] leading-[20px]">
+                      View More
+                    </button>
                   </div>
                 </div>
               </div>
-              <p>Web Development and Mobile app Development</p>
-              <div className="flex gap-[22px]">
-                <button>Join free</button>
-                <button>View More</button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

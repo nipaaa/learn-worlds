@@ -514,8 +514,34 @@ input::placeholder {
   border-radius: unset !important;
   height: 18px;
 }
-.event_details .time_venue{
+
+.event_details h3 {
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #31374D;
+}
+
+.event_details h3::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 20%;
+  background-color: #31374D;
+  bottom: -2px;
+  left: 0;
+}
+
+.event_details .time_venue {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.event_details .event_card {
+  background-color: #FBFDFF;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+
 }
 
 .global_online h2 {
