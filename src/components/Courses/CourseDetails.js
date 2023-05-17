@@ -162,9 +162,7 @@ const CourseDetails = () => {
                 <p>$</p>
                 <h1>29</h1>
               </div>
-              <button className="buy_btn" >
-                Buy This Course
-              </button>
+              <button className="buy_btn">Buy This Course</button>
               <button className="cart_btn" type="">
                 <img src={cart} alt="" />
                 add to cart

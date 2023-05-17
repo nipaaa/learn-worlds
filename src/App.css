@@ -990,6 +990,13 @@ select {
   padding: 20px 77px;
 }
 
+.learning h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #2E3331;
+  letter-spacing: -0.01em;
+}
 
 
 
