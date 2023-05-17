@@ -5,12 +5,27 @@ import Square from "./../../assets/illustration/square.png";
 import GoogleLogo from "./../../assets/illustration/Google.png";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { userLoggedIn } from "../../features/auth/authSlice";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    const accessToken = "fjlkafjklalfjl";
+    const user = {
+      email,
+      password,
+    };
+
+    const data = { accessToken, user };
+
+    dispatch(userLoggedIn(data));
     navigate("/");
   };
   return (
@@ -48,12 +63,14 @@ const Login = () => {
                 <input
                   type="email"
                   placeholder="Enter phone number"
+                  name="email"
                   className="input input-bordered w-full h-[65px] border-[#cecece] mt-[50px] mb-[30px] py-[19px] rounded-[3px] pl-[35px]"
                   required
                 />
                 <input
                   type="password"
                   placeholder="Password"
+                  name="password"
                   className="input input-bordered w-full h-[65px] border-[#cecece]  py-[19px] rounded-[3px] pl-[35px]"
                   required
                 />
