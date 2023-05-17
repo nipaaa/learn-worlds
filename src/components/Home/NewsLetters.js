@@ -7,7 +7,7 @@ const NewsLetters = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div>
-            <img className="h-full" src={newsletter} alt="" />
+            <img className="h-full w-full" src={newsletter} alt="" />
           </div>
           <div className="bg-[#F7F7F7] px-[30px] py-[82px]">
             <h2 className="font-[Montserrat] font-[700] text-[24px] leading-[29px] text-[#FF1949] mb-[5px]">

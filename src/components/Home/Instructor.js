@@ -32,10 +32,10 @@ const Instructor = () => {
         <Title>
           <span>Meet The Instructors</span>
         </Title>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[100px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
           {instructors.map((instructor, index) => (
             <div key={index} className="instructor_card">
-              <img className="instructor_img" src={instructor.pic} alt="" />
+              <img className=" instructor_img" src={instructor.pic} alt="" />
               <div className="description ml-16 text-white">
                 <p className="text-[24px] font-[700]">{instructor.name}</p>
                 <p className="text-[16px] font-[400]">{instructor.expertise}</p>

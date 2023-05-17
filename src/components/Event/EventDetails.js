@@ -1,5 +1,6 @@
 import React from "react";
 import eventDetails from "../../assets/event/event-details.jpeg";
+import card from "../../assets/event/card.png";
 import location from "../../assets/logo/location.png";
 import clock from "../../assets/logo/clock.png";
 import calender from "../../assets/logo/calender.png";
@@ -8,7 +9,7 @@ const EventDetails = () => {
   return (
     <div className="event_details mb-[150px]">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px]">
           <div className="col-span-2">
             <img className="mb-[50px]" src={eventDetails} alt="" />
             <h2 className="text-[32px] leading-[42px] font-[700] text-[#31374D] mb-[25px]">
@@ -67,6 +68,36 @@ const EventDetails = () => {
             <button className="bg-[#0C1F38] py-[28px] rounded-[15px] w-100 text-white text-[28px] font-[600]">
               Join Now
             </button>
+          </div>
+
+          <div>
+            <h2>Recent Event</h2>
+            <div>
+              <img className="mb-[15px]" src={card} alt="" />
+              <div className="flex justify-between mb-[25px]">
+                <div>
+                  <div className="flex gap-[10px] items-center">
+                    <img src={location} alt="" />
+                    <p className="text-[#5F6765] text-[14px] font-[400]">
+                      Dhaka
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex gap-[10px] items-center">
+                    <img src={clock} alt="" />
+                    <p className="text-[#5F6765] text-[14px] font-[400]">
+                      12.00 PM-03.00 AM
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p>Web Development and Mobile app Development</p>
+              <div className="flex gap-[22px]">
+                <button>Join free</button>
+                <button>View More</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

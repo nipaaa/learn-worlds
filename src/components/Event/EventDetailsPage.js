@@ -8,7 +8,7 @@ const EventDetailsPage = () => {
     <div>
       <SectionBanner
         bg="bg-[#70679F]"
-        route="Event"
+        route="Event Details"
         content="At ipsum est viverra varius lectus et tempus arcu massa egetpretium at tellus tristique Amet euismod vel suspendisse nunc, ut ru egetpretium trum arcu egetpretium morbi"
         bannerImg={banner}
       />
