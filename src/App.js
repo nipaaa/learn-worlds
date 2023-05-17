@@ -21,6 +21,7 @@ import Classroom from "./pages/Classroom/Classroom";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import EventDetailsPage from "./components/Event/EventDetailsPage";
+import EventForm from "./components/Event/EventForm";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/event" element={<EventPage />} />
           <Route path="/eventDetails" element={<EventDetailsPage />} />
+          <Route path="/joinEvent" element={<EventForm />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/account" element={<Account />} />

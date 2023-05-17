@@ -4,6 +4,7 @@ import card from "../../assets/event/card.png";
 import location from "../../assets/logo/location.png";
 import clock from "../../assets/logo/clock.png";
 import calender from "../../assets/logo/calender.png";
+import { Link } from "react-router-dom";
 
 const EventDetails = () => {
   return (
@@ -65,9 +66,11 @@ const EventDetails = () => {
                 </div>
               </div>
             </div>
+            <Link to="joinEvent">
             <button className="bg-[#0C1F38] py-[28px] rounded-[15px] w-100 text-white text-[28px] font-[600]">
               Join Now
             </button>
+            </Link>
           </div>
 
           <div>
