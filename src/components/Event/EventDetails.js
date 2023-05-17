@@ -66,7 +66,7 @@ const EventDetails = () => {
                 </div>
               </div>
             </div>
-            <Link to="joinEvent">
+            <Link to="/joinEvent">
             <button className="bg-[#0C1F38] py-[28px] rounded-[15px] w-100 text-white text-[28px] font-[600]">
               Join Now
             </button>
