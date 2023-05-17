@@ -162,7 +162,7 @@ const CourseDetails = () => {
                 <p>$</p>
                 <h1>29</h1>
               </div>
-              <button className="gradient_btn mb-[17px]" type="">
+              <button className="buy_btn" >
                 Buy This Course
               </button>
               <button className="cart_btn" type="">

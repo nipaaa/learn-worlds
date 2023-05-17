@@ -830,6 +830,19 @@ textarea {
   color: #737373;
 }
 
+.price_box .buy_btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  background: linear-gradient(88.98deg, #FF047D 2.19%, #FF8804 99.89%);
+  border-radius: 15px;
+  padding: 12px 0;
+  color: white;
+  margin-bottom: 17px;
+  width: 100%;
+}
+
 .reviews .review_card {
   border: 1px solid #FF7A00;
   border-radius: 30px;
@@ -1035,6 +1048,8 @@ select {
   .course_banner h5 {
     font-size: 20px;
   }
+
+
 
   .global_online h2 {
     font-size: 25px;
