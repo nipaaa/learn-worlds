@@ -4,12 +4,14 @@
 
 .checout-btn {
   background: linear-gradient(88.98deg, #ff047d 2.19%, #ff8804 99.89%);
-  padding: 20px 43px;
   border-radius: 7px;
   color: white;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
   line-height: 24px;
+}
+
+.apply-gradiant-btn {
+  background: linear-gradient(88.98deg, #ff047d 2.19%, #ff8804 99.89%);
+  color: white;
 }
