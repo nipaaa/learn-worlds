@@ -185,12 +185,15 @@
 }
 
 .courseTab {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  background: #FCFEFF;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  width: 220px;
+  height: 76px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  color: #31374D;
 }
 
 .tabActive {
@@ -455,17 +458,15 @@ input::placeholder {
 }
 
 .activeTab {
-  font-family: "Poppins", sans-serif;
-  width: 170px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  background: #f3718b;
+  width: 220px;
+  height: 76px;
+  background: #F3718B;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  padding: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
 }
 
 .progress {

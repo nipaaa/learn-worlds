@@ -17,7 +17,7 @@ const CoursesTab = () => {
   };
   return (
     <div>
-      <div className="px-3 flex justify-center gap-[70px] mb-[30px] overflow-y-scroll">
+      <div className="p-3 flex justify-center gap-[20px] mb-[30px] overflow-y-scroll">
         {tabs.map((tab) => (
           <button
             key={tab?.id}
