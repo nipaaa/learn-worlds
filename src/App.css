@@ -140,7 +140,8 @@ a.gradient_btn:hover {
   line-height: 24px;
   color: #ffffff;
 }
-a.blue_btn:hover{
+
+a.blue_btn:hover {
   color: white !important;
 }
 
@@ -329,17 +330,17 @@ a.blue_btn:hover{
 }
 
 .instructor .instructor_img {
-  box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
-  -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
-  -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  -webkit-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  -moz-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
   overflow: hidden;
   transition: 0.6s ease-out;
 }
 
 .instructor .instructor_card:hover .instructor_img {
-  box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
-  -webkit-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
-  -moz-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
+  box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  -webkit-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
+  -moz-box-shadow: 50px 67px 0px 0 rgba(249, 76, 102, 0.9);
 }
 
 .instructor .instructor_icon {
@@ -363,7 +364,7 @@ a.blue_btn:hover{
 }
 
 .instructor_card:hover .description {
-  display: none;
+  display: block;
   transition: 0.3s;
 }
 
