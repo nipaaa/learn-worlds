@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import crossColorful from "../../assets/icon/cross-gradient.png";
 import cross from "../../assets/icon/cross-fadded.png";
 import "./Cart.css";
+import CouponModal from "../../utils/Modals/CouponModal";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const [coponApplied, setCoponApplied] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
+
+  const handleGoToCheckOut = () => {
+    navigate("/checkout");
+  };
   return (
     <section className="container mt-[139px] mb-[150px]">
       <h1 className="font-[700] text-[50px] text-[#31374D] mb-[64px]">Cart</h1>
@@ -155,19 +162,30 @@ const Cart = () => {
             <p className="font-[600] text-[18px] text-[#31374D] text-center">
               Cart Total
             </p>
-            <div className="mt-[40px] flex justify-between mb-[60px]">
+            <div className="mt-[40px] flex justify-between mb-[20px]">
               <p className="font-[400] text-[18px] text-[#2E3331]">
                 SUB TOTAL:
               </p>
               <p className="font-[600] text-[18px] text-[#2E3331]">$87.00</p>
             </div>
-            <button className="checout-btn font-[600] md:text-[20px] px-[10px] md:px-[43px]  py-[20px]">
+            <p
+              className="text-center mb-[20px] cursor-pointer font-semibold text-[#ff4f39]"
+              onClick={() => setShowModal(true)}
+            >
+              Apply Coupon
+            </p>
+            <button
+              className="checout-btn font-[600] md:text-[20px] px-[10px] md:px-[43px]  py-[20px]"
+              onClick={handleGoToCheckOut}
+            >
               Proceed To Checkout
             </button>
           </div>
           {/* checkout end */}
         </div>
       </div>
+      {/* modal */}
+      <CouponModal showModal={showModal} setShowModal={setShowModal} />
     </section>
   );
 };
