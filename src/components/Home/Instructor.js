@@ -32,7 +32,7 @@ const Instructor = () => {
         <Title>
           <span>Meet The Instructors</span>
         </Title>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[68px]">
           {instructors.map((instructor, index) => (
             <div key={index} className="instructor_card">
               <img className=" instructor_img" src={instructor.pic} alt="" />

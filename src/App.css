@@ -335,6 +335,7 @@ a.blue_btn:hover {
   -moz-box-shadow: 0 0 0px 0 rgba(249, 76, 102, 0.9);
   overflow: hidden;
   transition: 0.6s ease-out;
+  width: 100%;
 }
 
 .instructor .instructor_card:hover .instructor_img {
