@@ -50,6 +50,9 @@ const Learning = () => {
               at sed enim mattis suspendisse nulla id nec quam ut et.{" "}
             </p>
           </div>
+          <div className="learning_video">
+            
+          </div>
         </div>
       </div>
     </div>
