@@ -8,14 +8,14 @@ import TrustedCompany from './TrustedCompany';
 import Instructor from './Instructor';
 import NewsLetters from './NewsLetters';
 import StudentsSay from './StudentsSay';
-import CourseTab from './CourseTab';
+
 
 const Home = () => {
     return (
         <div>
             <Banner/>
             <TrustedCompany/>
-            <CourseTab/>
+            <Courses />
             <AboutUs/>
             <Offer/>
             <Event/>

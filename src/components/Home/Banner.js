@@ -7,6 +7,7 @@ import teacher from "../../assets/logo/teacher.png";
 import course from "../../assets/logo/course.png";
 import expert from "../../assets/home/expert.png";
 import collection from "../../assets/home/collection.png";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   const database = [
@@ -26,6 +27,7 @@ const Banner = () => {
       title: "Courses",
     },
   ];
+
   return (
     <div className="banner">
       <div className="container ">
@@ -59,17 +61,37 @@ const Banner = () => {
             <div className="heroine ">
               <img className="lg:-ml-36" src={banner} alt="" />
             </div>
-            <div className="expert flex items-center gap-[20px]">
+            <motion.div
+              initial={{ x: -300 }}
+              animate={{ x: -120 }}
+              transition={{
+                delay: 0.2,
+                duration: 2,
+                type: "spring",
+                stiffness: 20,
+              }}
+              className="expert flex items-center gap-[20px]"
+            >
               <img src={expert} alt="" />
               <p>Expert Instructors</p>
-            </div>
-            <div className="collection flex items-center gap-[20px]">
+            </motion.div>
+            <motion.div
+              initial={{ x: -100 }}
+              animate={{ x: 0 }}
+              transition={{
+                delay: 0.2,
+                duration: 2,
+                type: "spring",
+                stiffness: 20,
+              }}
+              className="collection flex items-center gap-[20px]"
+            >
               <img src={collection} alt="" />
               <p>
                 Largest Collection <br />
                 For Every Course
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
