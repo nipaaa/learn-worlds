@@ -97,7 +97,13 @@ const Checkout = () => {
           className="flex gap-[10px] md:gap-[49px] border px-[30px] py-[54px]  border-[#74747473] rounded-[15px] "
           onClick={() => setPaymentMethod("card")}
         >
-          <input type="radio" name="card" id="cardId" value="card" />
+          <input
+            type="radio"
+            name="card"
+            id="cardId"
+            value="card"
+            className="radio-btn"
+          />
           <label
             className="flex  gap-[5px] items-center cursor-pointer"
             htmlFor="cardId"
@@ -112,7 +118,13 @@ const Checkout = () => {
           className="flex gap-[10px] md:gap-[49px] border px-[30px] py-[21px]  border-[#74747473] rounded-[15px] "
           onClick={() => setPaymentMethod("bikash")}
         >
-          <input type="radio" name="card" id="bikashId" value="bikash" />
+          <input
+            type="radio"
+            name="card"
+            id="bikashId"
+            value="bikash"
+            className="radio-btn"
+          />
           <label htmlFor="bikashId" className="cursor-pointer">
             <img src={bikash} alt="" />
           </label>
@@ -121,7 +133,13 @@ const Checkout = () => {
           className="flex md:gap-[49px] border px-[30px]  border-[#74747473] rounded-[15px] "
           onClick={() => setPaymentMethod("nogod")}
         >
-          <input type="radio" name="card" id="nogodId" value="nogod" />
+          <input
+            type="radio"
+            name="card"
+            id="nogodId"
+            value="nogod"
+            className="radio-btn"
+          />
           <label htmlFor="nogodId" className="cursor-pointer">
             <img src={nogod} alt="" />
           </label>
@@ -130,7 +148,13 @@ const Checkout = () => {
           className="flex gap-[10px] md:gap-[49px] border px-[30px] py-[18px] border-[#74747473] rounded-[15px] "
           onClick={() => setPaymentMethod("rocket")}
         >
-          <input type="radio" name="card" id="rocketId" value="rocket" />
+          <input
+            type="radio"
+            name="card"
+            id="rocketId"
+            value="rocket"
+            className="radio-btn"
+          />
           <label htmlFor="rocketId" className="cursor-pointer">
             <img src={rocket} alt="" />
           </label>

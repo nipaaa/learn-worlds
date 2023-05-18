@@ -15,17 +15,17 @@ const Cart = () => {
             <tr className="text-center border">
               <th className="text-start px-[32px] py-[24px]">Item Name</th>
               <th>Price</th>
-              <th className="px-[32px]">Quantity</th>
-              <th>Total</th>
-              <th className="px-[32px]">
+              {/* <th className="px-[32px]">Quantity</th> */}
+              {/* <th>Total</th> */}
+              {/* <th className="px-[32px]">
                 <img className=" mx-auto " src={crossColorful} alt="" />
-              </th>
+              </th> */}
             </tr>
           </thead>
           <tbody>
-            <tr className="text-center ">
-              <td className="text-start flex items-center gap-[71px] p-[32px]">
-                <div className="w-[136px] h-[68px] rounded-[7px]">
+            <tr className="text-center hover:bg-[#ff800a56] cursor-pointer ">
+              <td className="text-start flex items-center gap-[71px] p-[32px] ">
+                <div className="w-[136px] h-[68px] rounded-[7px] overl">
                   <img
                     src="https://i.ytimg.com/vi/rMfZaozkoWY/maxresdefault.jpg"
                     alt=""
@@ -42,21 +42,21 @@ const Cart = () => {
                 </div>
               </td>
               <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">
                 {" "}
                 <span className=" px-[26px] py-[9px] bg-[#F3FBFF] rounded-[5px]">
                   {" "}
                   01
                 </span>
-              </td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td>
+              </td> */}
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td> */}
+              {/* <td>
                 <img className="mx-auto cursor-pointer" src={cross} alt="" />
-              </td>
+              </td> */}
             </tr>
-            <tr className="text-center ">
-              <td className="text-start flex items-center gap-[71px] p-[32px]">
-                <div className="w-[136px] h-[68px] rounded-[7px]">
+            <tr className="text-center hover:bg-[#ff800a56] cursor-pointer ">
+              <td className="text-start flex items-center gap-[71px] p-[32px] ">
+                <div className="w-[136px] h-[68px] rounded-[7px] overl">
                   <img
                     src="https://i.ytimg.com/vi/rMfZaozkoWY/maxresdefault.jpg"
                     alt=""
@@ -73,21 +73,21 @@ const Cart = () => {
                 </div>
               </td>
               <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">
                 {" "}
                 <span className=" px-[26px] py-[9px] bg-[#F3FBFF] rounded-[5px]">
                   {" "}
                   01
                 </span>
-              </td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td>
+              </td> */}
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td> */}
+              {/* <td>
                 <img className="mx-auto cursor-pointer" src={cross} alt="" />
-              </td>
+              </td> */}
             </tr>
-            <tr className="text-center border-b">
-              <td className="text-start flex items-center gap-[71px] p-[32px]">
-                <div className="w-[136px] h-[68px] rounded-[7px]">
+            <tr className="text-center hover:bg-[#ff800a56] cursor-pointer ">
+              <td className="text-start flex items-center gap-[71px] p-[32px] ">
+                <div className="w-[136px] h-[68px] rounded-[7px] overl">
                   <img
                     src="https://i.ytimg.com/vi/rMfZaozkoWY/maxresdefault.jpg"
                     alt=""
@@ -104,17 +104,17 @@ const Cart = () => {
                 </div>
               </td>
               <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">
                 {" "}
                 <span className=" px-[26px] py-[9px] bg-[#F3FBFF] rounded-[5px]">
                   {" "}
                   01
                 </span>
-              </td>
-              <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td>
-              <td>
+              </td> */}
+              {/* <td className="font-[500] text-[16px] text-[#5F6765]">$ 29</td> */}
+              {/* <td>
                 <img className="mx-auto cursor-pointer" src={cross} alt="" />
-              </td>
+              </td> */}
             </tr>
           </tbody>
         </table>
