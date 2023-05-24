@@ -6,6 +6,7 @@ import amd from "../../assets/logo/amd.png";
 import design from "../../assets/logo/99design.png";
 import chaseo from "../../assets/logo/amazon.png";
 import circleBg from "../../assets/bg/circel-bg1.png";
+import { motion } from "framer-motion";
 
 const TrustedCompany = () => {
   const trustedCompany = [
@@ -29,7 +30,14 @@ const TrustedCompany = () => {
     },
   ];
   return (
-    <div className="trusted_company">
+    <motion.div  initial={{ x: -300 }}
+    animate={{ x: 0 }}
+    transition={{
+      delay: 0.2,
+      duration: 2,
+      type: "spring",
+      stiffness: 20,
+    }} className="trusted_company">
       <img className="hidden lg:block circle_bg" src={circleBg} alt="" />
       <div className="container ">
         <h2>Trusted by 5000+ companies worldwide</h2>
@@ -41,7 +49,7 @@ const TrustedCompany = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
